@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TherapyConnect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <nav>
+    <a class="logo" href="#hero">
+      <img class="logo-img" src="images/logo.png" alt="TherapyConnect" onerror="this.style.background='#6C3EF4';this.removeAttribute('src')" />
+      TherapyConnect
+    </a>
+
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="#problem" data-i18n="nav_features">Características</a></li>
+        <li><a href="#who" data-i18n="nav_parents">Para padres</a></li>
+        <li><a href="#who" data-i18n="nav_institutions">Instituciones</a></li>
+        <li><a href="#how" data-i18n="nav_how">Cómo funciona</a></li>
+        <li><a href="#pricing" data-i18n="nav_pricing">Precios</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contáctanos</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-actions">
+      <select class="lang-switch lang-top" id="langSwitchTop" aria-label="Idioma">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+      </select>
+      <a class="btn-primary nav-cta" href="#pricing" data-i18n="register_free">Registrarse gratis</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menú móvil">
+    <a href="#problem" onclick="closeMenu()" data-i18n="nav_features">Características</a>
+    <a href="#who" onclick="closeMenu()" data-i18n="nav_parents">Para padres</a>
+    <a href="#who" onclick="closeMenu()" data-i18n="nav_institutions">Instituciones</a>
+    <a href="#how" onclick="closeMenu()" data-i18n="nav_how">Cómo funciona</a>
+    <a href="#pricing" onclick="closeMenu()" data-i18n="nav_pricing">Precios</a>
+    <a href="#contact" onclick="closeMenu()" data-i18n="nav_contact">Contáctanos</a>
+    <a class="btn-primary" href="#pricing" onclick="closeMenu()" data-i18n="register_free">Registrarse gratis</a>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="blob blob-purple"></div><div class="blob blob-yellow"></div><div class="blob blob-teal"></div><div class="blob blob-blue"></div>
+    <div class="hero-left">
+      <h1 data-i18n="hero_title">Conecta, monitorea y apoya el desarrollo de tu hijo</h1>
+      <p data-i18n="hero_subtitle">Plataforma digital especializada en terapias para niños con autismo, TDAH y Asperger. Conectamos padres con profesionales para un seguimiento personalizado.</p>
+      <div class="hero-cta">
+        <a class="btn-yellow" href="#pricing" data-i18n="hero_cta_1">Comenzar ahora</a>
+        <a class="btn-outline" href="#how" data-i18n="hero_cta_2">Agendar demo</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="device-frame">
+        <div class="float-blob float-yellow-blob"></div><div class="float-blob float-blue-blob"></div>
+        <div class="device-screen">
+          <div class="device-topbar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span class="dash-title">TherapyConnect Dashboard</span></div>
+          <div class="dash-label" data-i18n="hero_dashboard">Panel de Monitoreo</div>
+          <div class="dash-cards">
+            <div class="dash-card purple-card"><div class="card-label" data-i18n="hero_sessions">Sesiones</div><div class="card-value">24</div><div class="card-sub" data-i18n="hero_this_month">Este mes</div></div>
+            <div class="dash-card teal-card"><div class="card-label" data-i18n="hero_progress">Progreso</div><div class="card-value">85%</div><div class="card-sub" data-i18n="hero_goal">Objetivo</div><div class="avatar-circle">TC</div></div>
+          </div>
+          <div class="chart-section">
+            <div class="chart-section-title" data-i18n="hero_chart">Desarrollo semanal</div>
+            <div class="bars"><div class="bar" style="height:40%;background:#C4B5FD;"></div><div class="bar" style="height:65%;background:#6C3EF4;"></div><div class="bar" style="height:50%;background:#C4B5FD;"></div><div class="bar" style="height:80%;background:#6C3EF4;"></div><div class="bar" style="height:55%;background:#C4B5FD;"></div><div class="bar" style="height:90%;background:#6C3EF4;"></div><div class="bar" style="height:70%;background:#8B5CF6;"></div></div>
+          </div>
+          <div class="legend">
+            <div class="legend-item"><div class="legend-dot" style="background:#6C3EF4;"></div><span data-i18n="hero_legend_1">Sesión de comunicación completada</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#F5A623;"></div><span data-i18n="hero_legend_2">Tarea de habilidades motoras pendiente</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#4DD9C0;"></div><span data-i18n="hero_legend_3">Actividad cognitiva en progreso</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="problem" id="problem">
+    <h2 data-i18n="problem_title">El problema que resolvemos</h2>
+    <p class="subtitle" data-i18n="problem_subtitle">Descubre cómo TherapyConnect transforma la gestión terapéutica tradicional en una experiencia digital fluida.</p>
+    <div class="problem-grid">
+      <div>
+        <div class="problem-col-title" data-i18n="problem_without">Sin nuestra plataforma</div>
+        <div class="prob-card"><div class="prob-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" width="20" height="20"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div><div class="card-text"><h4 data-i18n="problem_1_t">Padres olvidan instrucciones</h4><p data-i18n="problem_1_d">Las indicaciones terapéuticas se pierden y baja la efectividad del tratamiento.</p></div></div>
+        <div class="prob-card"><div class="prob-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M12 8v8"/></svg></div><div class="card-text"><h4 data-i18n="problem_2_t">Gestión en Excel y WhatsApp</h4><p data-i18n="problem_2_d">Las instituciones usan herramientas separadas que generan caos e ineficiencia.</p></div></div>
+        <div class="prob-card"><div class="prob-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" width="20" height="20"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><div class="card-text"><h4 data-i18n="problem_3_t">Conflictos de citas</h4><p data-i18n="problem_3_d">Doble reserva y cruces de horario afectan las sesiones.</p></div></div>
+      </div>
+      <div>
+        <div class="problem-col-title" data-i18n="problem_with">Con TherapyConnect</div>
+        <div class="sol-card"><div class="sol-icon">✓</div><div class="card-text"><h4 data-i18n="sol_1_t">Registro digital de sesiones</h4><p data-i18n="sol_1_d">Instrucciones y avances siempre disponibles para padres y terapeutas.</p></div></div>
+        <div class="sol-card"><div class="sol-icon">✓</div><div class="card-text"><h4 data-i18n="sol_2_t">Agenda integrada</h4><p data-i18n="sol_2_d">Sistema inteligente que evita conflictos y optimiza horarios.</p></div></div>
+        <div class="sol-card"><div class="sol-icon">✓</div><div class="card-text"><h4 data-i18n="sol_3_t">Chat en tiempo real</h4><p data-i18n="sol_3_d">Comunicación inmediata para acompañamiento continuo.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2 data-i18n="cta_title">¿Listo para transformar tu práctica terapéutica?</h2>
+    <p data-i18n="cta_subtitle">Únete a familias e instituciones que ya usan TherapyConnect para lograr mejores resultados.</p>
+    <a class="btn-cta-yellow" href="#pricing" data-i18n="cta_btn">Comenzar hoy</a>
+  </div>
+
+  <section class="everything" id="features">
+    <h2 data-i18n="features_title">Todo lo que necesitas en un solo lugar</h2>
+    <p class="subtitle" data-i18n="features_subtitle">Herramientas diseñadas para facilitar el seguimiento terapéutico y mantener a padres y profesionales conectados.</p>
+    <div class="everything-grid">
+      <div class="ev-card"><div class="ev-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" width="36" height="36"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3 data-i18n="f1_t">Seguimiento de sesiones</h3><p data-i18n="f1_d">Progreso diario visible con reportes detallados.</p></div>
+      <div class="ev-card"><div class="ev-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" width="36" height="36"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h3 data-i18n="f2_t">Reserva de citas</h3><p data-i18n="f2_d">Agenda sin cruces y con recordatorios automáticos.</p></div>
+      <div class="ev-card"><div class="ev-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" width="36" height="36"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3 data-i18n="f3_t">Actividades adaptadas</h3><p data-i18n="f3_d">Dinámicas especializadas para autismo, TDAH y Asperger.</p></div>
+      <div class="ev-card"><div class="ev-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" width="36" height="36"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div><h3 data-i18n="f4_t">Marketplace de materiales</h3><p data-i18n="f4_d">Recursos terapéuticos sugeridos por especialistas.</p></div>
+      <div class="ev-card"><div class="ev-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" width="36" height="36"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h3 data-i18n="f5_t">Chat en tiempo real</h3><p data-i18n="f5_d">Canal directo con terapeutas para soporte inmediato.</p></div>
+      <div class="ev-card"><div class="ev-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" width="36" height="36"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div><h3 data-i18n="f6_t">Monitoreo con cámara</h3><p data-i18n="f6_d">Transparencia para familias con acceso seguro a sesiones.</p></div>
+    </div>
+  </section>
+
+  <section class="who" id="who">
+    <h2 data-i18n="who_title">¿Para quién es?</h2>
+    <p class="subtitle" data-i18n="who_subtitle">Diseñado para familias e instituciones terapéuticas con soluciones adaptadas.</p>
+    <div class="who-grid">
+      <div class="who-card">
+        <div class="who-card-banner parents-banner"></div>
+        <div class="who-card-body">
+          <div class="who-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#6C3EF4" stroke-width="2" stroke-linecap="round" width="32" height="32"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <h3 class="parents-title" data-i18n="who_parents_t">Para padres</h3>
+          <p data-i18n="who_parents_d">Sigue el proceso de tu hijo con actualizaciones en tiempo real y comunicación clara.</p>
+          <ul class="who-list">
+            <li data-i18n="wp1">Recibe instrucciones claras del terapeuta</li>
+            <li data-i18n="wp2">Accede al progreso en tiempo real</li>
+            <li data-i18n="wp3">Agenda citas fácilmente</li>
+            <li data-i18n="wp4">Comunícate directo con el equipo</li>
+          </ul>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-card-banner institutions-banner"></div>
+        <div class="who-card-body">
+          <div class="who-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" width="32" height="32"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <h3 class="inst-title" data-i18n="who_inst_t">Para instituciones terapéuticas</h3>
+          <p data-i18n="who_inst_d">Optimiza tu operación con herramientas de agenda, historia clínica y comunicación.</p>
+          <ul class="who-list">
+            <li data-i18n="wi1">Gestiona horarios sin conflictos</li>
+            <li data-i18n="wi2">Registra sesiones por paciente</li>
+            <li data-i18n="wi3">Monitorea avances de forma eficiente</li>
+            <li data-i18n="wi4">Mantén documentación segura</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <h2 data-i18n="how_title">¿Cómo funciona?</h2>
+    <div class="steps">
+      <div class="step"><div class="step-connector"></div><div class="step-num">1</div><h3 data-i18n="h1_t">Regístrate en minutos</h3><p data-i18n="h1_d">Crea tu cuenta y configura el perfil del niño.</p></div>
+      <div class="step"><div class="step-connector"></div><div class="step-num">2</div><h3 data-i18n="h2_t">Conecta con tu institución</h3><p data-i18n="h2_d">Accede a sesiones, agenda y recursos educativos.</p></div>
+      <div class="step"><div class="step-connector"></div><div class="step-num">3</div><h3 data-i18n="h3_t">Acompaña el desarrollo</h3><p data-i18n="h3_d">Revisa reportes y refuerza habilidades en casa.</p></div>
+    </div>
+    <div class="start-cta">
+      <h2 data-i18n="start_title">Comienza hoy sin costo</h2>
+      <p data-i18n="start_subtitle">Únete a miles de familias. No necesitas tarjeta de crédito.</p>
+      <a class="btn-cta-yellow" href="#pricing" data-i18n="start_btn">Empezar gratis</a>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2 data-i18n="testi_title">Lo que dicen nuestras familias e instituciones</h2>
+    <div class="underline-bar"></div>
+    <div class="testi-grid">
+      <div class="testi-card"><div class="testi-avatar"><svg viewBox="0 0 24 24" fill="#9CA3AF" width="28" height="28"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="testi-name">Giovanni P.</div><div class="testi-role" data-i18n="r1">Padre de un niño con TDAH</div><p class="testi-text" data-i18n="t1">La plataforma simplificó toda nuestra coordinación terapéutica.</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card"><div class="testi-avatar"><svg viewBox="0 0 24 24" fill="#9CA3AF" width="28" height="28"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="testi-name">Maria S.</div><div class="testi-role" data-i18n="r2">Madre de un niño con autismo</div><p class="testi-text" data-i18n="t2">Ahora todo es más fácil y estamos mejor conectados con terapeutas.</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card"><div class="testi-avatar"><svg viewBox="0 0 24 24" fill="#9CA3AF" width="28" height="28"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="testi-name">Carlos R.</div><div class="testi-role" data-i18n="r3">Padre de un niño con dificultades de aprendizaje</div><p class="testi-text" data-i18n="t3">Los reportes y el chat directo nos ayudan muchísimo cada semana.</p><div class="stars">★★★★★</div></div>
+    </div>
+    <div class="institutions-trust">
+      <p data-i18n="trust_title">Instituciones que confían en nosotros</p>
+      <div class="inst-logos"><div class="inst-logo-box"><svg viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="1.5" width="32" height="32"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div><div class="inst-logo-box"><svg viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="1.5" width="32" height="32"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div><div class="inst-logo-box"><svg viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="1.5" width="32" height="32"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="inst-logo-box"><svg viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="1.5" width="32" height="32"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2 data-i18n="pricing_title">Planes para cada familia e institución</h2>
+    <p class="subtitle" data-i18n="pricing_subtitle">Elige el plan ideal para tu proceso terapéutico</p>
+    <div class="pricing-grid">
+      <div class="plan-card"><div><div class="plan-name">Basic</div><div class="plan-desc" data-i18n="p1_d">Perfecto para empezar</div></div><a class="btn-plan-outline" href="#" data-i18n="p1_btn">Comenzar</a></div>
+      <div class="plan-card featured"><div class="most-popular" data-i18n="popular">Más popular</div><div><div class="plan-name">Premium</div><div class="plan-desc" data-i18n="p2_d">Para familias en crecimiento</div></div><a class="btn-plan-purple" href="#" data-i18n="p2_btn">Iniciar Premium</a></div>
+      <div class="plan-card"><div><div class="plan-name">Institutional</div><div class="plan-desc" data-i18n="p3_d">Para instituciones y clínicas</div></div><a class="btn-plan-blue" href="#" data-i18n="p3_btn">Contactar ventas</a></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 data-i18n="contact_title">Contáctanos</h2>
+    <p class="subtitle" data-i18n="contact_subtitle">Estamos aquí para ayudarte. Escríbenos y te responderemos pronto.</p>
+    <div class="contact-grid">
+      <form class="contact-form">
+        <label for="name" data-i18n="form_name">Nombre</label>
+        <input id="name" type="text" />
+        <label for="email" data-i18n="form_email">Correo</label>
+        <input id="email" type="email" />
+        <label for="msg" data-i18n="form_message">Mensaje</label>
+        <textarea id="msg"></textarea>
+        <button type="button" class="btn-primary" data-i18n="form_send">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand"><div class="footer-brand-img">T</div><span class="footer-brand-name">TherapyConnect</span></div>
+        <p class="footer-tagline" data-i18n="footer_tagline">Transformamos el soporte terapéutico con tecnología y cuidado humano.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="company">Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="social">Redes sociales</h4>
+        <ul>
+          <li><a href="#">Facebook: TherapyConnect</a></li>
+          <li><a href="#">Instagram: @therapyconnect</a></li>
+          <li><a href="#">LinkedIn: TherapyConnect</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="contact_footer">Contacto</h4>
+        <ul>
+          <li>TherapyConnect@gmail.com</li>
+          <li>+51 999 123 456</li>
+          <li>Lun - Vie, 9:00 AM - 6:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 TherapyConnect. <a href="#" data-i18n="terms">Términos</a> | <a href="#" data-i18n="privacy">Privacidad</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
