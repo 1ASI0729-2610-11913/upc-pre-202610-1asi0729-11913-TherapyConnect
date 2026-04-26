@@ -570,3 +570,38 @@ Se respeta la escala tipográfica del sistema con adaptaciones para Android:
 * Soporte para prefers-reduced-motion: desactivar animaciones decorativas cuando el sistema lo indique.
 * Compatible con modo de alto contraste y texto en negrita del sistema Android.
 * Indicador de foco visible en navegación por teclado externo (dispositivos con teclado físico o bluetooth).
+
+## 4.2. Information Architecture
+
+### 4.2.1. Organization Systems
+En esta sección de sistemas de organización, se considera a la organización visual del contenido de nuestra plataforma.
+
+Visual:
+
+Forma jerárquica: En este campo visual, se emplea una organización jerárquica. En el contexto de nuestra aplicación, los componentes más grandes corresponderan a una jerarquía de primer orden a máximo nivel.
+* Primer Nivel: Al ingresar a la aplicación como usuario, se presentan el logo, el acceso a Alertas de emergencia, el Dashboard y los botones de navegación principal.
+* Segundo Nivel: Se encontrarán los componentes que acompañan directamente al primer nivel, como las tarjetas de Reportes del estudiante, descripciones de cursos en la sección de Aprendizaje y cuadros de ingreso de información.
+* Tercer Nivel: Se guiará a los componentes independientes como íconos de búsqueda, fotos de perfil de los terapeutas y botones de interacción en las Sesiones en Vivo.
+Organización secuencial: Este sistema se utilizará cuando los usuarios decidan cambiar sus datos de información personal o cuando realicen el flujo de Registro de cuenta del padre y del niño, el cual requiere una serie de pasos lógicos y ordenados.
+Organización matricial: Esta organización se incluye en múltiples vistas del sistema que requieren cruce de información compleja, como el Calendario, donde se gestionan simultáneamente los horarios de los profesores, la disponibilidad de las aulas y las citas de los estudiantes.
+
+### 4.2.2. Labeling Systems
+En esta sección se describen las etiquetas utilizadas en la interfaz para que el usuario identifique rápidamente las funciones del sistema, basándose estrictamente en las necesidades del negocio.
+
+### Etiquetas de navegación:
+| Etiqueta             | Descripción                                                                  |
+|----------------------|------------------------------------------------------------------------------|
+| Dashboard            | Resumen de reportes y estado general del desarrollo del niño.                |
+| Sesiones en Vivo     | Acceso a las transmisiones de las clases para transparencia con los padres.  |
+| Aprendizaje          | Catálogo de cursos y videos educativos adaptados a la condición.             |
+| Compra de materiales | Sección para adquirir productos recomendados por especialistas.              |
+| Calendario           | Visualización de la agenda semanal y detalle de sesiones (aula, modalidad).  |
+
+### Etiquetas para el cuerpo de la aplicación:
+| Etiqueta                | Descripción                                                             |
+|-------------------------|-------------------------------------------------------------------------|
+| Alertas de emergencia   | Notificaciones rápidas para responder a incidentes durante la sesión.   |
+| Reportes del estudiante | Documentos detallados sobre el desarrollo y progreso del niño.          |
+| Apuntes de Sesión       | Registro de observaciones del profesor en tiempo real durante la clase. |
+| Gestión de Recursos     | Registro y control de inventario de materiales y juguetes del centro.   |
+| Perfil del Niño         | Configuración de privacidad y datos sensibles del menor.                |
