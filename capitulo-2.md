@@ -164,22 +164,27 @@ Identificar las brechas no cubiertas por los competidores actuales y determinar 
 
 ### Segmento: Instituciones
 
-<img src="capitulo-2/imagenes/entrevista1.png">
+<img src="imagenes/entrevista1.png">
 
 https://drive.google.com/file/d/1-JYjNlUL-5BbCnFotNmEUuewmMaSKhwu/view?usp=sharing
+<em>Figura 1. Drive: Entrevista 1: Instituciones | Nota: En esta figura se aprecia la entrevista a una persona de segmento Instituciones.</em>
 
-<img src="capitulo-2/imagenes/entrevista2.png">   
+<img src="imagenes/entrevista2.png">   
+<em>Figura 2. Drive: Entrevista 2: Instituciones | Nota: En esta figura se aprecia la entrevista a una persona de segmento Instituciones.</em>
 
 https://drive.google.com/file/d/1bU3LlZOQVuhFCZGRFNON9o_N8RhT9Qe5/view?usp=drivesdk
 
 ---
 ### Segmento: Padres
 
-<img src="capitulo-2/imagenes/entrevista3.png">
+<img src="imagenes/entrevista3.png">
+<em>Figura 3. Drive: Entrevista 3: Padre de familia | Nota: En esta figura se aprecia la entrevista a una persona de segmento padres.</em>
+
 
 https://drive.google.com/file/d/1keA4lauqxrgfHj_07n4ACNfm_clN9C9K/view?usp=drivesdk
 
-<img src="capitulo-2/imagenes/entrevista4.png">   
+<img src="imagenes/entrevista4.png">   
+<em>Figura 4. Drive: Entrevista 4: Padre de familia | Nota: En esta figura se aprecia la entrevista a una persona de segmento padres.</em>
 
 https://drive.google.com/file/d/1UE1_fmCfViyI34tFf10bhlad5bKOUbMG/view?usp=sharing
  
@@ -187,21 +192,26 @@ https://drive.google.com/file/d/1UE1_fmCfViyI34tFf10bhlad5bKOUbMG/view?usp=shari
 
 ## 2.2.3. Análisis de Entrevistas
 
-<img src="capitulo-2/imagenes/entrevista1.png">   
+<img src="imagenes/entrevista1.png">
+<em>Figura 5. Drive: analisis 1: Instituciones | Nota: En esta figura se aprecia la entrevista a una persona de segmento Instituciones.</em>
+
 
 La entrevista revela que el Colegio Didáctica, enfocado en educación personalizada, gestiona actualmente sus procesos de forma manual y mediante herramientas básicas como Excel y Google Drive, lo que genera problemas de desorganización, pérdida de información, dificultades en la gestión de horarios y limitaciones en la comunicación con los padres. Aunque realizan seguimiento académico mediante informes periódicos, el acceso y manejo de estos datos resulta ineficiente debido a la falta de un sistema centralizado. Además, factores como la conectividad y la disponibilidad de los padres complican la interacción. Sin embargo, la institución muestra una actitud abierta hacia la adopción de nuevas tecnologías, siempre que sean fáciles de usar, lo que evidencia una clara oportunidad para implementar una solución digital integral que optimice la organización, mejore la comunicación y facilite el acceso a la información.
 
-<img src="capitulo-2/imagenes/entrevista2.png">   
+<img src="imagenes/entrevista2.png">   
+<em>Figura 6. Drive: analisis 2: Instituciones | Nota: En esta figura se aprecia la entrevista a una persona de segmento Instituciones.</em>
 
 La entrevista evidencia que el centro de terapias gestiona actualmente sus procesos de manera básica utilizando Excel, Google Drive y comunicación por WhatsApp, lo que genera ciertas ineficiencias en la organización de horarios, actualización de información y coordinación con padres de familia. El seguimiento del progreso de los pacientes se realiza mediante informes de las terapeutas y retroalimentación directa después de cada sesión, pero no existe un sistema centralizado que almacene y facilite el acceso a esta información. Además, se identifican problemas como la dificultad de algunos padres para usar tecnología, la actualización manual de datos (especialmente al cambiar dispositivos) y limitaciones en la gestión de cobros y registros. A pesar de ello, el centro muestra disposición para adoptar nuevas tecnologías, siempre que incluyan capacitación, destacando la necesidad de una plataforma integral que permita gestionar datos de pacientes, horarios, historial, pagos y seguimiento en una sola base de datos accesible y organizada.
 
 ### Segmentos de Padres
 
-<img src="capitulo-2/imagenes/entrevista3.png">
+<img src="imagenes/entrevista3.png">
+<em>Figura 7. Drive: analisis 3: Padre de familia | Nota: En esta figura se aprecia la entrevista a una persona de segmento padres.</em>
 
 La entrevista con el padre de familia evidencia que su hija recibe terapia de lenguaje dos veces por semana y que el seguimiento se basa principalmente en indicaciones presenciales al finalizar cada sesión y en comunicación mediante WhatsApp, donde también recibe recomendaciones. Aunque el padre muestra compromiso al aplicar las indicaciones en casa y confía en los profesionales, se identifican oportunidades de mejora como la necesidad de recibir más información estructurada, reportes o evidencias del progreso, así como capacitaciones o talleres para reforzar su apoyo en el hogar. No presenta grandes dificultades tecnológicas, pero depende casi exclusivamente de WhatsApp, lo que limita el acceso organizado a la información. Además, expresa interés en contar con una plataforma más completa que le permita visualizar mejor el progreso de su hija, acceder a actividades personalizadas y mantenerse más informado, lo que refleja una apertura hacia soluciones digitales que mejoren la comunicación y el seguimiento.
 
-<img src="capitulo-2/imagenes/entrevista4.png">   
+<img src="imagenes/entrevista4.png">   
+<em>Figura 8. Drive: analisis 4: Padre de familia | Nota: En esta figura se aprecia la entrevista a una persona de segmento padres.</em>
 
 La entrevista evidencia que el padre de un niño con TDAH enfrenta dificultades en el seguimiento del progreso de su hijo debido a la falta de una comunicación estructurada y de un registro claro por parte del centro terapéutico. Actualmente, la información se transmite de forma breve al finalizar cada sesión o mediante mensajes por WhatsApp, lo que resulta insuficiente y genera inseguridad al momento de aplicar las recomendaciones en casa, llevando incluso a la improvisación. El padre muestra compromiso y confianza en los profesionales, pero expresa la necesidad de contar con indicaciones más detalladas, guías paso a paso, evidencias del avance (como reportes, fotos o videos) y un sistema donde pueda consultar el historial del tratamiento. Además, aunque está dispuesto a usar herramientas digitales, enfatiza que estas deben ser simples, claras y fáciles de usar. En conjunto, se identifica una fuerte oportunidad para implementar una plataforma digital que centralice la información, mejore la comunicación y brinde apoyo continuo a los padres en el proceso terapéutico.
 
@@ -209,11 +219,13 @@ La entrevista evidencia que el padre de un niño con TDAH enfrenta dificultades 
 
 ## 2.3.1. User Personas
 
-<img src="capitulo-2/imagenes/user-person1.png">   
+<img src="imagenes/user-person1.png">   
+<em>Figura 9. User-Person Rocio Torres | Nota: En esta figura se aprecia el User Person.</em>
 
 Esta imagen muestra una user persona estructurada en formato profesional tipo UXPRESSIA, con secciones bien definidas como objetivos, estilo de vida, motivaciones y frustraciones. La organización por bloques mejora la lectura y análisis del usuario. Además, el uso de indicadores visuales (como barras y colores) ayuda a interpretar rápidamente sus características principales.
 
-<img src="capitulo-2/imagenes/user-person2.png">   
+<img src="imagenes/user-person2.png">   
+<em>Figura 10. User-Person Giovanni Campos | Nota: En esta figura se aprecia el User Person.</em>
 
 Esta imagen presenta una user persona centrada en un padre de familia con una problemática real: el seguimiento del desarrollo de su hija con TDAH. Se destacan elementos importantes como sus objetivos, frustraciones y estilo de vida, lo que permite entender claramente sus necesidades. El diseño es ordenado y visual, facilitando identificar rápidamente los puntos clave del usuario.
 
@@ -243,7 +255,8 @@ Esta imagen presenta una user persona centrada en un padre de familia con una pr
 
 ## 2.3.3. User Journey Mapping
 
-<img src="capitulo-2/imagenes/user-journey.png">   
+<img src="imagenes/user-journey.png">   
+<em>Figura 11. User Journey Mapping.</em>
 
 El User Journey Mapping muestra el recorrido completo del usuario al interactuar con el servicio, desde el inicio hasta el final. Permite identificar sus acciones, emociones y puntos de dolor en cada etapa. Es útil para detectar fallas en la experiencia y proponer mejoras centradas en sus necesidades.
 
@@ -253,11 +266,13 @@ https://miro.com/welcomeonboard/SE1EbkwzN0gxMWZFYmhWOCtiNVpJaTZCVFNXeWtibjdnQzdX
 
 ## 2.3.4. Empathy Mapping
 
-<img src="capitulo-2/imagenes/user-empathy1.png"> 
+<img src="imagenes/user-empathy1.png"> 
+<em>Figura 12. Empathy Mapping.</em>
 
 <br>
 
-<img src="capitulo-2/imagenes/user-empathy2.png">   
+<img src="imagenes/user-empathy2.png">   
+<em>Figura 13. User Journey Mapping.</em>
 
 
 El Empathy Mapping ayuda a comprender mejor al usuario analizando lo que piensa, siente, dice y hace. También incluye sus dolores y necesidades, lo que permite tener una visión más humana del problema. Es clave para diseñar soluciones más alineadas con la realidad del usuario.
@@ -268,11 +283,14 @@ El Empathy Mapping ayuda a comprender mejor al usuario analizando lo que piensa,
 
 ### Segmento: Instituciones
 
-<img src="capitulo-2/imagenes/as-is-instituciones.png">
+<img src="imagenes/as-is-instituciones.png">
+<em>Figura 14. As-Is Scenario Mapping - Instituciones.</em>
+
 
 ### Segmento: Padres de familia
 
-<img src="capitulo-2/imagenes/as-is-padres.png">
+<img src="imagenes/as-is-padres.png">
+<em>Figura 15. As-Is Scenario Mapping - Padres.</em>
 
 El As-Is Scenario Mapping describe cómo es la situación actual del usuario antes de implementar una solución. Muestra los procesos reales, problemas existentes y limitaciones. Sirve como base para entender qué aspectos necesitan ser mejorados.
 
@@ -281,6 +299,8 @@ https://miro.com/welcomeonboard/Q214SXhPODErVUZjaHUvNUt2LzgwSVFpREhBaERFZXpZZy9I
 ---
 
 # 2.4. Big Picture Event Storming.
+
+<em>Figura 16. Big Picture Event Storming.</em>
 
 ---
 
