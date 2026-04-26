@@ -220,32 +220,32 @@ Se mantienen consistentes con web:
 Navegación Mobile
 
 Bottom Navigation (Principal)
-* 4–5 ítems máximo:
- - Inicio
- - Citas
- - Progreso
- - Mensajes
- - Perfil
+1 -> 4–5 ítems máximo:
+* Inicio
+* Citas
+* Progreso
+* Mensajes
+* Perfil
 
-* Ítem activo:
- - Color: #5B2D8E
- - Label visible siempre
+2 -> Ítem activo:
+* Color: #5B2D8E
+* Label visible siempre
 
 Top Bar (Mobile)
-* Altura: 56px
-* Fondo: #FFFFFF
-* Incluye:
- - Título de pantalla
- - Botón de retroceso
+1 -> Altura: 56px
+2 -> Fondo: #FFFFFF
+3 -> Incluye:
+* Título de pantalla
+* Botón de retroceso
 
 Componentes Específicos Mobile
 
 FAB (Floating Action Button)
-* Tamaño: 56px
-* Color: #5B2D8E
-* Ícono: blanco
-* Uso:
- - Acción principal (ej: agendar cita).
+1 -> Tamaño: 56px
+2 -> Color: #5B2D8E 
+3 -> Ícono: blanco
+4 -> Uso:
+* Acción principal (ej: agendar cita).
 
 Bottom Sheets
 * Reemplazan modales web
@@ -263,10 +263,10 @@ Snackbars
 * Acción opcional (ej: “Deshacer”)
 
 Pull-to-refresh
-* Aplicado en:
- - Lista de citas
- - Mensajes
- - Progreso
+-> Aplicado en:
+* Lista de citas
+* Mensajes
+* Progreso
 
 Gestos (Swipe)
 * Swipe derecha → confirmar.
@@ -274,16 +274,16 @@ Gestos (Swipe)
 
 Iconografía
 Se mantiene el sistema definido en web:
-* Biblioteca: Material Symbols Rounded.
-* Tamaños:
- - 24px estándar
- - 20px en labels
+1 -> Biblioteca: Material Symbols Rounded.
+2 -> Tamaños:
+* 24px estándar
+* 20px en labels
 
 ### Reglas:
-* Nunca usar solo ícono sin texto en acciones críticas.
-* Color:
- - #343A40 en fondos claros.
- - #FFFFFF en fondos oscuros.
+1 -> Nunca usar solo ícono sin texto en acciones críticas.
+2 -> Color:
+* #343A40 en fondos claros.
+* #FFFFFF en fondos oscuros.
 
 Densidad y Layout Mobile
 Para evitar sobrecarga cognitiva:
@@ -294,13 +294,13 @@ Para evitar sobrecarga cognitiva:
 
 ### Accesibilidad en Mobile
 Se mantiene alineación con WCAG 2.1:
-* Área táctil mínima: 44x44px.
-* Contraste mínimo 4.5:1.
-* Navegación compatible con lectores de pantalla.
-* Indicador de foco visible.
-* Soporte para:
- - prefers-reduced-motion.
- - modo alto contraste.
+1 -> Área táctil mínima: 44x44px.
+2 -> Contraste mínimo 4.5:1.
+3 -> Navegación compatible con lectores de pantalla.
+4 -> Indicador de foco visible.
+5 -> Soporte para:
+* prefers-reduced-motion.
+* modo alto contraste.
 
 ## 4.1.3.1. IOS Mobile Style Guidelines.
 Resolución y Breakpoints iOS
@@ -425,3 +425,148 @@ Alineado con WCAG 2.1 y las pautas de Apple Accessibility:
 * Soporte para prefers-reduced-motion: desactivar animaciones decorativas.
 * Indicador de foco visible en navegación por teclado externo (iPad / bluetooth).
 * Compatible con modo de alto contraste y texto en negrita del sistema.
+
+## 4.1.3.2. Android Mobile Style Guidelines
+Resolución y Breakpoints Android
+
+Se consideran los siguientes rangos como referencia:
+* Compacto (< 360px): dispositivos de gama baja o pantallas pequeñas, base mínima del diseño.
+* Estándar (360px – 480px): rango principal de diseño, cubre la mayoría de dispositivos Android del mercado.
+* Grande (480px+): dispositivos Android de pantalla extendida, escalado fluido sin ruptura de jerarquía.
+
+El diseño se construye desde 360px como base, escalando hacia arriba sin alterar la estructura visual ni la densidad de información. Se considera además la variabilidad de densidades de pantalla (mdpi, hdpi, xhdpi, xxhdpi, xxxhdpi), utilizando unidades dp y sp para garantizar consistencia visual entre dispositivos.
+
+### Componentes Base – Adaptación Android
+
+### Botones (Android)
+Se mantiene el sistema definido en Mobile Style Guidelines con ajustes para la experiencia táctil de Android y el patrón Material Design 3:
+* Altura mínima: 40dp (alineado con Material Design 3).
+* Border-radius: 20dp (Full rounded, siguiendo el patrón Filled Button de M3).
+* Ripple effect: efecto de onda al presionar, color #5B2D8E con opacidad 12%.
+* Elevación: sombra sutil en botones primarios (2dp en reposo, 4dp en hover/focus).
+
+Tipos heredados:
+* Primario (Filled): fondo #5B2D8E, texto #FFFFFF, ripple blanco.
+* Secundario (Outlined): borde 1.5dp #5B2D8E, fondo transparente, ripple #5B2D8E al 12%.
+* Acento (CTA): fondo #F5A623, uso en "Agendar cita".
+* Destructivo: fondo #C62828, confirmación mediante Dialog nativo de Material.
+* Text Button: sin fondo ni borde, solo texto en #5B2D8E, para acciones terciarias.
+
+Estados:
+* Disabled: opacidad 38%, sin ripple.
+* Loading: Circular Progress Indicator centrado, tamaño 20dp.
+* Focus: outline visible, color #5B2D8E, 3dp de grosor.
+
+### Inputs y Formularios (Android)
+Basados en el componente de Material Design 3 en variante Outlined:
+* Padding: 12dp 16dp.
+* Border: 1dp #DEE2E6 en reposo.
+* Border-radius: 4dp (esquinas ligeramente redondeadas, patrón M3 Outlined).
+* Uso del teclado nativo de Android según tipo de campo: textEmailAddress, phone, number, textPersonName, text.
+* IME Action configurado contextualmente: actionNext en campos intermedios, actionDone en el último campo.
+* Labels flotantes sobre el campo al recibir foco (Floating Label, patrón nativo M3).
+* Formularios extensos divididos en pasos con stepper visible.
+* Inputs ocupan 100% del ancho del contenedor.
+
+Estados:
+* Focus: borde 2dp #5B2D8E, label en #5B2D8E.
+* Error: borde 2dp #C62828, label en #C62828, mensaje de error debajo con ícono.
+* Éxito: borde 2dp #2E7D32, ícono check al final del campo.
+
+### Navegación Android
+
+### Bottom Navigation Bar
+Sigue el patrón NavigationBar de Material Design 3:
+* Máximo 5 ítems: Inicio, Citas, Progreso, Mensajes, Perfil.
+* Ítem activo: indicador de píldora (#EDE5F7) con ícono en #5B2D8E y label visible.
+* Ítem inactivo: ícono en #6C757D, label visible.
+* Fondo: #FFFFFF con elevación sutil (1dp).
+* Compatible con gestos de navegación del sistema (gesture navigation de Android 10+).
+
+### Top App Bar
+Sigue el patrón TopAppBar de Material Design 3:
+* Altura: 64dp.
+* Fondo: #FFFFFF.
+* Título alineado a la izquierda en vistas de detalle.
+* Large Top App Bar (título grande) en vistas raíz: título en 22sp, colapsa al hacer scroll.
+* Botón de retroceso: ícono arrow_back de Material Symbols Rounded.
+* Acciones secundarias: íconos a la derecha (máximo 2 visibles, resto en menú overflow).
+
+### Edge-to-Edge y Gesture Navigation
+Todos los layouts respetan las áreas del sistema en Android:
+* Status Bar: el contenido no se superpone; fondo del status bar transparente con íconos oscuros sobre fondos claros.
+* Navigation Bar (gestos): padding inferior para evitar superposición con la barra de gestos del sistema.
+* Se implementa WindowInsetsCompat para gestión dinámica de insets en todas las pantallas.
+
+### Componentes Específicos Android
+
+### Dialogs (Material)
+Para confirmaciones críticas y acciones destructivas:
+* Título + mensaje descriptivo breve.
+* Máximo 2 acciones: confirmación (texto en #5B2D8E) y cancelar (texto en #6C757D).
+* Acción destructiva en #C62828.
+* Border-radius: 28dp (patrón Dialog M3).
+
+### Bottom Sheets
+Adaptados al patrón BottomSheetBehavior de Material Design 3:
+* Drag handle visible (4dp × 32dp, color #DEE2E6).
+* Estados: colapsado, medio expandido, completamente expandido.
+* Peek height configurable según contenido.
+* Uso: confirmar citas, ver detalles de sesión, acciones rápidas.
+
+### Snackbars
+* Posición: inferior (sobre la Bottom Navigation).
+* Duración: 4 segundos (corta) o persistente para acciones críticas.
+* Acción opcional con texto en #F5A623 (ej: "Deshacer").
+* Border-radius: 4dp, fondo #343A40, texto #FFFFFF.
+
+### FAB (Floating Action Button)
+Sigue el patrón FloatingActionButton de Material Design 3:
+* Tamaño estándar: 56dp.
+* Color: #5B2D8E, ícono #FFFFFF.
+* Ripple al presionar: blanco, opacidad 12%.
+* Elevación: 6dp en reposo, 8dp al presionar.
+* Uso exclusivo: acción principal de la pantalla (ej: "Agendar cita").
+* Se oculta al hacer scroll hacia abajo (hide on scroll) y reaparece al subir.
+
+### Pull-to-Refresh
+Implementado con SwipeRefreshLayout nativo en:
+* Lista de citas.
+* Mensajes.
+* Progreso del estudiante.
+Indicador de carga en color #5B2D8E.
+
+### Iconografía en Android
+Se mantiene la biblioteca Material Symbols Rounded del sistema general, alineada con el ecosistema nativo de Android:
+* Tamaño estándar: 24dp.
+* Tamaño en Bottom Navigation: 24dp con label debajo.
+* Color en fondos claros: #343A40.
+* Color en fondos de color / oscuros: #FFFFFF.
+* Color activo en navegación: #5B2D8E.
+* Nunca usar ícono solo sin texto en acciones críticas.
+
+### Tipografía en Android
+Se respeta la escala tipográfica del sistema con adaptaciones para Android:
+* Fuente principal del sistema: Roboto como fallback si la fuente propia no carga (definir en fontFamily).
+* Unidades en sp para respetar las preferencias de tamaño de fuente del usuario.
+* Texto mínimo: 16sp para evitar problemas de legibilidad.
+* Interlineado mínimo: 1.5 en párrafos de contenido.
+* Soporte para Font Scale de Android: los tamaños escalan con la configuración de accesibilidad del dispositivo.
+
+| Gesto                              | Acción                                                        |
+|------------------------------------|---------------------------------------------------------------|
+| Swipe desde el borde izquierdo     | Retroceder en la navegación (back gesture nativo Android 10+) |
+| Swipe derecha sobre tarjeta        | Confirmar / acción positiva                                   |
+| Swipe izquierda sobre tarjeta      | Cancelar / eliminar                                           |
+| Long press                         | Menú contextual (acciones secundarias)                        |
+| Pull down                          | Refresh de contenido                                          |
+| Swipe hacia abajo en Bottom Sheet  | Colapsar / cerrar sheet                                       |
+
+### Accesibilidad en Android
+* Alineado con WCAG 2.1 y las pautas de Android Accessibility:
+* Área táctil mínima: 48×48dp (recomendación oficial de Material Design).
+* Contraste mínimo: 4.5:1 para texto normal, 3:1 para texto grande.
+* Soporte para Switch Access: navegación secuencial accesible para usuarios con movilidad reducida.
+* Soporte para prefers-reduced-motion: desactivar animaciones decorativas cuando el sistema lo indique.
+* Compatible con modo de alto contraste y texto en negrita del sistema Android.
+* Indicador de foco visible en navegación por teclado externo (dispositivos con teclado físico o bluetooth).
