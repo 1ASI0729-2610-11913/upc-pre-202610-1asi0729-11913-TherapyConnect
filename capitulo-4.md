@@ -605,3 +605,36 @@ En esta sección se describen las etiquetas utilizadas en la interfaz para que e
 | Apuntes de Sesión       | Registro de observaciones del profesor en tiempo real durante la clase. |
 | Gestión de Recursos     | Registro y control de inventario de materiales y juguetes del centro.   |
 | Perfil del Niño         | Configuración de privacidad y datos sensibles del menor.                |
+
+### 4.2.3. SEO Tags and Meta Tags
+Para asegurar la visibilidad de la plataforma y facilitar que los padres e instituciones encuentren nuestras soluciones, se han definido los siguientes parámetros:
+* Indexación (Indexing): Se permite la indexación de las páginas públicas de información, mientras que las vistas con datos sensibles del niño y reportes se mantienen bloqueadas.
+* Título de la página (Title Tag): Nombre del Producto | Apoyo Terapéutico para Autismo, TDAH y Asperger.
+* Meta Descripción: "Plataforma integral para el seguimiento terapéutico y comunicación entre padres y profesionales. Gestión de citas, reportes de progreso y materiales educativos".
+* Keywords: Terapia para autismo, seguimiento terapéutico infantil, comunicación padres terapeutas, TDAH, Asperger.
+
+### 4.2.4. Searching Systems 
+El sistema de búsqueda permite que los usuarios se trasladen de manera eficiente entre las diversas vistas de la aplicación. Se implementarán dos mecanismos principales: una barra de búsqueda global y sistemas de filtrado avanzado en vistas específicas.
+
+Métodos de búsqueda de nuestra aplicación:
+* Por condición del niño: Permite localizar cursos y materiales específicos para autismo, TDAH o Asperger.
+* Por nombre del profesional: Facilita a los padres encontrar especialistas específicos para sesiones privadas o a domicilio.
+* Por nombre del estudiante: Permite a instituciones y profesores acceder rápidamente al historial y seguimiento de un alumno en particular.
+* Por tipo de recurso: Localización de materiales educativos, juguetes o herramientas dentro del inventario institucional.
+* Por palabras clave en notas: Búsqueda dentro del historial de observaciones y apuntes de sesión para encontrar registros específicos.
+
+Filtrado de búsqueda:
+En las diversas interfaces del sistema, se habilitarán las siguientes opciones de filtrado para optimizar la navegación:
+
+| Segmento      | Opciones de Filtrado                                                                       |
+|---------------|--------------------------------------------------------------------------------------------|
+| Padres        | Por necesidad especial, nivel de apoyo requerido y tipo de producto (juguete/herramienta). |
+| Instituciones | Por disponibilidad de aulas, carga de estudiantes por profesor y horarios específicos.     |
+| Profesores    | Por tipo de sesión (grupal o privada), aula asignada y fechas de apuntes anteriores.       |
+
+### 4.2.5. Navigation Systems
+* Gracias a nuestra aplicación, los usuarios podrán navegar de manera intuitiva por el lenguaje claro y conciso que caracteriza a cada una de las secciones. Con la facilidad de hacer clic en los íconos respectivos para poder dirigirse a las secciones correspondientes. Además de poder utilizar los botones desplegados para intercomunicar las secciones.
+* Navegación Aleatoria: Nuestros usuarios pueden recorrer este contenido de manera aleatoria, por el hecho de que podrán acceder a cualquier sección en el momento que necesiten (como saltar de la Compra de materiales al Calendario o al historial de Apuntes de Sesión) sin seguir un orden estricto.
+* Navegación Lineal: Se aplicará en los procesos de Inicio de sesión y Registro, los cuales serán las primeras vistas si el usuario no está registrado, guiándole paso a paso hasta completar su perfil.
+* Navegación por Intercomunicación: La aplicación utiliza botones de acción y notificaciones para conectar secciones. Por ejemplo, al recibir una Alerta de Emergencia, el usuario podrá dirigirse con un solo clic desde cualquier vista hacia la sesión activa para responder al incidente.
+* Navegación Global: Se mantendrá un menú persistente que permite a los padres e instituciones volver siempre a las secciones principales como el Dashboard o los Reportes del estudiante, garantizando que nunca se pierdan dentro de la plataforma.
