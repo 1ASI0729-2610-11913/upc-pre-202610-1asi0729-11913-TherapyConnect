@@ -638,3 +638,7 @@ En las diversas interfaces del sistema, se habilitarán las siguientes opciones 
 * Navegación Lineal: Se aplicará en los procesos de Inicio de sesión y Registro, los cuales serán las primeras vistas si el usuario no está registrado, guiándole paso a paso hasta completar su perfil.
 * Navegación por Intercomunicación: La aplicación utiliza botones de acción y notificaciones para conectar secciones. Por ejemplo, al recibir una Alerta de Emergencia, el usuario podrá dirigirse con un solo clic desde cualquier vista hacia la sesión activa para responder al incidente.
 * Navegación Global: Se mantendrá un menú persistente que permite a los padres e instituciones volver siempre a las secciones principales como el Dashboard o los Reportes del estudiante, garantizando que nunca se pierdan dentro de la plataforma.
+
+### 4.6.1 Design-Level Event Storming.
+
+[Structurizr - Diagrama de Arquitectura](https://structurizr.com/share/109683)
