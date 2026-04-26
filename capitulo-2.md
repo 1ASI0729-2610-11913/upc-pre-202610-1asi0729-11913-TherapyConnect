@@ -346,4 +346,4 @@ https://miro.com/welcomeonboard/Q214SXhPODErVUZjaHUvNUt2LzgwSVFpREhBaERFZXpZZy9I
 - **ADHD (TDAH - Trastorno por Déficit de Atención e Hiperactividad):** Condición que afecta la atención, impulsividad y concentración del paciente, considerada para adaptar actividades terapéuticas.
 - **Autism (Autismo):** Condición del desarrollo que afecta la comunicación y la interacción social, utilizada para personalizar el proceso terapéutico.
 - **Asperger Syndrome (Síndrome de Asperger):** Condición del espectro autista que impacta la interacción social, considerada en el diseño de actividades sociales.
-- **Down Syndrome (Síndrome de Down):** Condición genética que influye en el desarrollo cognitivo y físico, considerada en la adaptación del aprendizaje.
+- **Down Syndrome (Síndrome de Down):** Condición genética que influye en el desarrollo cognitivo y físico, considerada en la adaptación del aprendizaje
