@@ -1,4 +1,4 @@
-# Capítulo IV: Product Design
+git checkout develop# Capítulo IV: Product Design
 ## 4.1. Style Guidelines
 
 En esta sección se establecen los lineamientos visuales y comunicativos que guiarán el diseño de la plataforma, con el objetivo de garantizar una experiencia consistente, accesible y alineada al dominio terapéutico.
