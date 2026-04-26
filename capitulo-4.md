@@ -221,22 +221,22 @@ Navegación Mobile
 
 Bottom Navigation (Principal)
 * 4–5 ítems máximo:
-- Inicio
-- Citas
-- Progreso
-- Mensajes
-- Perfil
+ - Inicio
+ - Citas
+ - Progreso
+ - Mensajes
+ - Perfil
 
 * Ítem activo:
-- Color: #5B2D8E
-- Label visible siempre
+ - Color: #5B2D8E
+ - Label visible siempre
 
 Top Bar (Mobile)
 * Altura: 56px
 * Fondo: #FFFFFF
 * Incluye:
-- Título de pantalla
-- Botón de retroceso
+ - Título de pantalla
+ - Botón de retroceso
 
 Componentes Específicos Mobile
 
@@ -245,7 +245,7 @@ FAB (Floating Action Button)
 * Color: #5B2D8E
 * Ícono: blanco
 * Uso:
-- Acción principal (ej: agendar cita).
+ - Acción principal (ej: agendar cita).
 
 Bottom Sheets
 * Reemplazan modales web
@@ -264,9 +264,9 @@ Snackbars
 
 Pull-to-refresh
 * Aplicado en:
-- Lista de citas
-- Mensajes
-- Progreso
+ - Lista de citas
+ - Mensajes
+ - Progreso
 
 Gestos (Swipe)
 * Swipe derecha → confirmar.
@@ -276,14 +276,14 @@ Iconografía
 Se mantiene el sistema definido en web:
 * Biblioteca: Material Symbols Rounded.
 * Tamaños:
-- 24px estándar
-- 20px en labels
+ - 24px estándar
+ - 20px en labels
 
 ### Reglas:
 * Nunca usar solo ícono sin texto en acciones críticas.
 * Color:
-- #343A40 en fondos claros.
-- #FFFFFF en fondos oscuros.
+ - #343A40 en fondos claros.
+ - #FFFFFF en fondos oscuros.
 
 Densidad y Layout Mobile
 Para evitar sobrecarga cognitiva:
@@ -299,8 +299,8 @@ Se mantiene alineación con WCAG 2.1:
 * Navegación compatible con lectores de pantalla.
 * Indicador de foco visible.
 * Soporte para:
-- prefers-reduced-motion.
-- modo alto contraste.
+ - prefers-reduced-motion.
+ - modo alto contraste.
 
 ## 4.1.3.1. IOS Mobile Style Guidelines.
 Resolución y Breakpoints iOS
