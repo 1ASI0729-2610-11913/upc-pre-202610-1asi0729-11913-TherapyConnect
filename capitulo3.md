@@ -1,32 +1,6 @@
 # Capítulo III: Requirements Specification
 
----
-
-## 3.1. To-Be Scenario Mapping
-
-### Segmento: Padre de familia
-
-| | Registro | Agendamiento | Sesión | Indicaciones | Casa | Seguimiento |
-|---|---|---|---|---|---|---|
-| **FASES** | | | | | | |
-| **DOING** | Crea cuenta / Ingresa datos / Accede dashboard | Selecciona horario / Reserva cita / Recibe confirmación | Asiste sesión / Revisa registro | Lee indicaciones / Recibe notificación | Aplica actividades / Consulta dudas | Revisa reportes / Visualiza progreso |
-| **THINKING** | Todo está centralizado / Es fácil de usar | Es rápido / No hay errores | Puedo revisarlo luego / Entiendo todo | Ahora entiendo todo / No olvidaré | Sé qué hacer / Estoy ayudando bien | Veo el avance claro |
-| **FEELING** | Tranquilidad / Confianza / Confianza / Seguridad | Comodidad / Seguridad | Confianza | Claridad / Seguridad | Motivación / Confianza | Satisfacción / Tranquilidad |
-
----
-
-### Segmento: Instituciones
-
-| | Registro | Citas | Sesión | Comunicación | Gestión | Análisis |
-|---|---|---|---|---|---|---|
-| **FASES** | | | | | | |
-| **DOING** | Registra institución / Configura sistema | Define horarios / Automatiza citas | Registra sesiones / Guarda evidencias | Envía indicaciones / Comparte reportes | Gestiona pacientes / Controla datos | Analiza reportes / Optimiza procesos |
-| **THINKING** | Centralizamos todo | Sin errores manuales | Todo queda registrado | Comunicación clara | Todo organizado | Mejores decisiones |
-| **FEELING** | Optimismo / Expectativa | Alivio / Seguridad | Control / Confianza | Tranquilidad | Eficiencia | Confianza / Profesionalismo |
-
----
-
-## 3.2. User Stories
+## 3.1. User Stories
 
 A continuación, se presentan las 127 User Stories agrupadas en 10 Épicas. Cada historia incluye su identificador, descripción en formato estándar (Como... quiero... para...) y criterios de aceptación con escenarios en formato Dado/Cuando/Entonces.
 
@@ -2722,7 +2696,7 @@ Las épicas cubren los tres segmentos de la plataforma: padres de familia, insti
 
 ---
 
-## 3.3 Impact Mapping
+## 3.2 Impact Mapping
 
 El Impact Mapping de TherapyConnect es un diagrama estratégico que resume la hoja de ruta para digitalizar la gestión terapéutica. El mapa evidencia cómo el sistema elimina la desorganización operativa de las instituciones y empodera a los padres mediante herramientas de seguimiento y aprendizaje adaptado en casa. En esencia, conecta los objetivos de negocio con User Stories específicas para asegurar un tratamiento integral, transparente y eficiente.
 
@@ -2732,7 +2706,7 @@ El Impact Mapping es una herramienta que conecta los objetivos del proyecto con 
 
 ---
 
-## 3.4. Product Backlog
+## 3.3. Product Backlog
 
 | # | Story ID | Título | Descripción | SP |
 |---|---|---|---|---|
