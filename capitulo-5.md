@@ -37,9 +37,30 @@ Los repositorios establecidos para cada producto de la solución son los siguien
 | Producto | Repositorio URL |
 |---|---|
 | Startup / Informe | https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect.git |
-| Landing Page | (por definir — se creará bajo la misma organización) |
+| Landing Page | https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect-website.git |
 | Frontend Web Application | (por definir — se creará bajo la misma organización) |
 | RESTful Web Services | (por definir — se creará bajo la misma organización) |
+
+#### GitFlow Workflow
+
+Se implementará el modelo de ramificación propuesto por Vincent Driessen en su artículo *“A successful Git branching model”*, conocido como **GitFlow**. Este modelo organiza el trabajo en las siguientes ramas:
+
+- `main`: Rama principal, contiene siempre el código en producción.
+- `develop`: Rama de desarrollo principal, donde se integran las funcionalidades antes de pasar a producción.
+- `feature/*`: Ramas creadas a partir de `develop` para desarrollar nuevas funcionalidades.**Convención de nombres:** `feature/<nombre-corto-descriptivo>`_Ejemplo: `feature/login-auth`_
+  **Convención de nombres:** `feature/<descripción-corta>`
+  _Ejemplo: `feature/version-testing`_
+
+#### Convenciones de Commits
+
+Se utilizará el estándar de **Conventional Commits** para los mensajes de commits. Esto facilitará la automatización en los procesos de integración continua y generación de changelogs.
+
+**Ejemplos:**
+
+- `feat: add login functionality`
+- `fix: correct null pointer exception on user service`
+- `chore: update dependencies`
+- `docs: add and update documents`
 
 ---
 
@@ -115,12 +136,44 @@ Esta sección está dedicada a determinar y establecer las convenciones y están
 ---
 
 ### 5.1.4. Software Deployment Configuration
+Esta sección detalla los pasos necesarios para desplegar de forma satisfactoria los productos digitales que componen la solución: el Business-Web-Page, la aplicación web (frontend) y los Web Services (backend), partiendo desde sus respectivos repositorios de código fuente.
+
+**1. Business-Web-Page - HTML, CSS y Javascript**
+
+**Tecnología Base**
+
+* Lenguajes: HTML5, CSS3, JavaScript
+* Hosting: GitHub Pages
+
+**Configuración y Despliegue**
+
+* Repositorio de Código Fuente:
+  La Business-Web-Page se desarrolla utilizando HTML, CSS y JavaScript puro. Todos los archivos del proyecto deben subirse a un repositorio público en GitHub. Es obligatorio que el archivo `index.html` esté ubicado en la raíz del repositorio (`/`) para que GitHub Pages lo detecte correctamente como punto de entrada del sitio.
+
+**Configuración del despliegue en GitHub Pages** :
+
+* Acceder al repositorio en GitHub.
+* Ir a la sección **Settings** del repositorio.
+* En el menú lateral, seleccionar  **Pages** .
+* En el campo  **Source** , elegir:
+    * Rama: `main`
+    * Carpeta: `/ (root)`
+* Guardar los cambios.
+
+**Publicación** :
+
+Una vez guardada la configuración, GitHub generará automáticamente una URL pública donde la Business-Web-Page estará disponible. Esta URL sigue el formato: `https://<usuario>.github.io/<repositorio>/`
+
+**Actualizaciones** :
+
+Cualquier nuevo commit hecho a la rama `main` será detectado automáticamente por GitHub Pages y aplicado en la versión publicada sin necesidad de acciones adicionales.
 
 ---
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
 ### 5.2.1. Sprint 1
+El primer sprint es un hito importante en nuestro proceso de desarrollo ágil. Durante este período, nos enfocamos en la implementación de las características y funcionalidades prioritarias identificadas en la planificación inicial. Esto implica traducir los requisitos y especificaciones en código funcional, desarrollando las bases de nuestro producto de manera iterativa.
 
 #### 5.2.1.1. Sprint Planning 1
 
@@ -149,13 +202,13 @@ En esta sección el equipo incluye la elaboración de un artefacto Leadership-an
 
 Los aspectos considerados en el Sprint 1 son: Landing Page, Style Guidelines, y Flujo de Acceso (Autenticación). Cada aspecto agrupa las User Stories relacionadas trabajadas durante este sprint.
 
-| Team Member (Last Name, First Name) | GitHub Username  | Landing Page L / C | Style Guidelines L / C | Flujo de Acceso L / C |
-|---|------------------|---|---|---|
-| Flores Chávez, Fabricio | Elmiau2341       | L | C | C |
-| Vilchez Vite, Gabriel Alejandro | GZ-99            | C | C | C |
-| Lopez Torres, Leonardo Gabriel | Deiko-138        | C | L | C |
-| Lopez Montalvo, Kevin Edu | Lopescamos       | C | C | L |
-| Conde Huashuayo, Sebasthian Alex | SebasthianAlexCH | C | C | C |
+| Team Member (Last Name, First Name) | GitHub Username | Landing Page L / C | Style Guidelines L / C | Flujo de Acceso L / C |
+|---|-----------------|---|---|---|
+| Flores Chávez, Fabricio | Elmiau2341      | L | C | C |
+| Vilchez Vite, Gabriel Alejandro | GZ-99           | C | C | C |
+| Lopez Torres, Leonardo Gabriel | Deiko-138       | C | L | C |
+| Lopez Montalvo, Kevin Edu | Lopescamos      | C | C | L |
+| Conde Huashuayo, Sebasthian Alex | Wolf2911-P      | C | C | C |
 
 ---
 
@@ -220,26 +273,19 @@ Trello: https://trello.com/invite/b/6a01270ea96c0a53e6826d61/ATTI1da43f25bafa713
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
-|---|---|---|---|---|
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | main | 13677da | doc: javascript | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | main | 9ff63a4 | Add main.css with base styles and layout | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | main | 29e223d | Update print statement from 'Hello' to 'Goodbye' | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | main | 8002da7 | Add mobile menu and language switch functionality | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | main | ddd2592 | Add initial CSS styles for the project | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | hotfix/fix-pages-index | db339dc | Merge branch 'hotfix/fix-pages-index' | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | hotfix/fix-pages-index | 8af213b | fix(pages): relocate index.html to public root. | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | hotfix/github-pages-deploy | e294786 | Merge branch 'hotfix/github-pages-deploy' | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | hotfix/github-pages-deploy | c66ca2f | fix: configure GitHub Pages deployment from public folder | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | release/v0.0.1 | d925511 | Merge branch 'release/v0.0.1' | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | release/v0.0.1 | fe1ld8e | fix(release): normalize contact placeholder information. | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | release/v0.0.1 | 7d61e80 | fix(release): replace empty footer placeholder links with non-navigable placeholders. | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | release/v0.0.1 | 62f432f | fix(release): add required validation to contact form fields | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | release/v0.0.1 | 4a6a864 | fix(release): remove obsolete inline onerror attribute from logo image. | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | main | dc69480 | fix(layout): correct asset paths in static resources | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | main | c5b6780 | feat(footer): implement footer section | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | main | 6a2f108 | feat(contact): implement contact form section | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | main | cff85a2 | feat(pricing): implement pricing plans section | 04/25/2026 |
+Durante el Sprint 1, el alcance de implementación estuvo enfocado exclusivamente en el desarrollo y despliegue de la primera versión del Landing Page de TherapyConnect, así como en la definición del sistema de diseño base (Style Guidelines) y la habilitación del flujo de acceso básico (registro, inicio de sesión, recuperación de contraseña y cierre de sesión) a nivel de interfaz de usuario.
+Landing Page  
+
+Durante el Sprint 1 se implementó la Landing Page. Los principales avances fueron:
+
+Diseño responsivo para diferentes tamaños de pantalla.  
+Creación de secciones: Hero, Sobre Nosotros, Beneficios, Testimonios, Preguntas Frecuentes, Tutorial, Contacto y Footer.  
+Aplicación de buenas prácticas de accesibilidad (etiquetado semántico, contraste adecuado).
+Implementación de navegación fluida entre secciones.  
+Validación de compatibilidad en navegadores y dispositivos.
+
+
+En consecuencia, no se ha realizado en este sprint el desarrollo de Web Services ni la implementación de endpoints RESTful, por lo que no existe documentación de servicios mediante OpenAPI/Swagger que reportar en esta entrega. La documentación de servicios será incorporada a partir del Sprint 2, cuando se inicie la implementación del backend con Spring Boot, conforme al plan de desarrollo establecido en el Product Backlog.
 
 ---
 
@@ -249,9 +295,27 @@ Trello: https://trello.com/invite/b/6a01270ea96c0a53e6826d61/ATTI1da43f25bafa713
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 1, el alcance de implementación estuvo enfocado exclusivamente en el desarrollo y despliegue de la primera versión del Landing Page de TherapyConnect, así como en la definición del sistema de diseño base (Style Guidelines) y la habilitación del flujo de acceso básico (registro, inicio de sesión, recuperación de contraseña y cierre de sesión) a nivel de interfaz de usuario.
+| Repository | Branch                     | Commit Id | Commit Message | Committed on (Date) |
+|---|----------------------------|---|---|---|
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                  | 13677da | doc: javascript | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | 9ff63a4 | Add main.css with base styles and layout | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | 29e223d | Update print statement from 'Hello' to 'Goodbye' | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | 8002da7 | Add mobile menu and language switch functionality | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | ddd2592 | Add initial CSS styles for the project | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer    | db339dc | Merge branch 'hotfix/fix-pages-index' | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer    | 8af213b | fix(pages): relocate index.html to public root. | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer| e294786 | Merge branch 'hotfix/github-pages-deploy' | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer| c66ca2f | fix: configure GitHub Pages deployment from public folder | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer            | d925511 | Merge branch 'release/v0.0.1' | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer           | fe1ld8e | fix(release): normalize contact placeholder information. | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer            | 7d61e80 | fix(release): replace empty footer placeholder links with non-navigable placeholders. | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer           | 62f432f | fix(release): add required validation to contact form fields | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer          | 4a6a864 | fix(release): remove obsolete inline onerror attribute from logo image. | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | dc69480 | fix(layout): correct asset paths in static resources | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | c5b6780 | feat(footer): implement footer section | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | 6a2f108 | feat(contact): implement contact form section | 04/25/2026 |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | cff85a2 | feat(pricing): implement pricing plans section | 04/25/2026 |
 
-En consecuencia, no se ha realizado en este sprint el desarrollo de Web Services ni la implementación de endpoints RESTful, por lo que no existe documentación de servicios mediante OpenAPI/Swagger que reportar en esta entrega. La documentación de servicios será incorporada a partir del Sprint 2, cuando se inicie la implementación del backend con Spring Boot, conforme al plan de desarrollo establecido en el Product Backlog.
 
 ---
 
@@ -287,3 +351,9 @@ https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConn
 - Los cambios se integraron a develop mediante Pull Requests, requiriendo al menos una revisión y aprobación de otro integrante antes del merge.
 - Los mensajes de commit siguieron el estándar Conventional Commits (`feat:`, `fix:`, `docs:`, `style:`, etc.), garantizando trazabilidad por funcionalidad.
 - Al finalizar el sprint, develop fue fusionada a main para el despliegue en GitHub Pages.
+
+<img src="">
+
+<br>
+
+<img src="">
