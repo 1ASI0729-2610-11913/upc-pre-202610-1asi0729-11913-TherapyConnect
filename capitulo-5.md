@@ -352,8 +352,174 @@ https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConn
 - Los mensajes de commit siguieron el estándar Conventional Commits (`feat:`, `fix:`, `docs:`, `style:`, etc.), garantizando trazabilidad por funcionalidad.
 - Al finalizar el sprint, develop fue fusionada a main para el despliegue en GitHub Pages.
 
-<img src="">
+<img src="imagenes/commits-AV1.png">
 
 <br>
 
-<img src="">
+<img src="imagenes/commits-members-AV1.png">
+
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2.
+
+En esta sección se especifican los aspectos principales del Sprint Planning Meeting del Sprint 2. La reunión se realizó el 9 de mayo de 2026 de forma virtual mediante Google Meet, con la participación de los cinco integrantes del equipo. El objetivo de este sprint es desarrollar la primera versión funcional del Frontend Web Application de TherapyConnect, implementando las vistas principales de los bounded contexts identificados para la plataforma.
+
+| Sprint # | Sprint 2 |
+|---|---|
+| **Sprint Planning Background** | |
+| Date | 2026-05-09 |
+| Time | 09:00 AM |
+| Location | Reunión virtual mediante Google Meet |
+| Prepared By | Lopez Torres, Leonardo Gabriel |
+| Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Lopez Montalvo, Kevin Edu / Conde Huashuayo, Sebasthian Alex / Vilchez Vite, Gabriel Alejandro / Flores Chávez, Fabricio |
+| Sprint 1 Review Summary | Durante el Sprint 1 se logró implementar y desplegar exitosamente la Landing Page completa de TherapyConnect en GitHub Pages, incluyendo las secciones Hero, funcionalidades, segmentos objetivo, planes y precios, testimonios, FAQ, footer y navegación responsive. Asimismo, se definieron los Style Guidelines del sistema de diseño (paleta de colores, tipografía, componentes base y grilla) y se implementaron las vistas de acceso básico (registro, inicio de sesión y recuperación de contraseña) para los tres segmentos de usuario. El equipo completó los 40 Story Points planificados dentro del plazo establecido. |
+| Sprint 1 Retrospective Summary | El equipo trabajó de forma coordinada y cumplió con los entregables del Sprint 1. Se identificó como oportunidad de mejora la revisión cruzada de código mediante Pull Requests antes del merge a develop, ya que en algunos casos se integraron cambios sin revisión previa. Para el Sprint 2 se acuerda: revisar cada PR con al menos un integrante antes del merge, mantener daily check-ins de 15 minutos por Discord para alinear avances, y aplicar de forma más estricta las convenciones de Conventional Commits en todos los repositorios. |
+| **Sprint Goal & User Stories** | |
+| Sprint 2 Goal | Our focus is on delivering the first functional version of the TherapyConnect Web Application, enabling the three user segments to navigate their respective dashboards and interact with the core bounded contexts of the platform. We believe it delivers a tangible and interactive experience to parents, therapeutic institutions and therapists, allowing them to visualize the key functionalities of the platform and validate that the proposed solution addresses their needs. This will be confirmed when the three types of users can access their respective dashboards from the deployed frontend application, navigate between the main views of each bounded context (IAM, Sessions, Communication, Marketplace and Notifications) and the application is publicly accessible via a cloud deployment URL. |
+| Sprint 2 Velocity | 45 Story Points (Capacidad establecida para el equipo considerando el inicio del desarrollo del Frontend en Angular y la curva de aprendizaje asociada al framework y la arquitectura por bounded contexts.) |
+| Sum of Story Points | 45 Story Points distribuidos en los siguientes bounded contexts del Frontend: BC: IAM — 10 SP \| BC: Session Management — 10 SP \| BC: Communication & Messaging — 8 SP \| BC: Marketplace — 9 SP \| BC: Notifications & Dashboard — 8 SP |
+
+---
+
+#### 5.2.2.2. Aspect Leaders and Collaborators.
+
+Para el Sprint 2, el equipo organizó el trabajo en función de los bounded contexts del Frontend Web Application desarrollado en Angular. Cada integrante asumió el liderazgo de un bounded context específico, siendo responsable de su arquitectura de componentes, servicios y su integración con el API. Los demás integrantes colaboraron según las necesidades de cada aspecto.
+
+| Team Member (Last Name, First Name) | GitHub Username | IAM Frontend L / C | Session Management L / C | Communication & Messaging L / C | Marketplace Frontend L / C | Notifications & Dashboard L / C |
+|---|---|---|---|---|---|---|
+| Lopez Torres, Leonardo Gabriel | | L | C | C | C | C |
+| Lopez Montalvo, Kevin Edu | Lopescamos | C | C | L | C | C |
+| Conde Huashuayo, Sebasthian Alex | SebasthianAlexCH | C | L | C | C | C |
+| Vilchez Vite, Gabriel Alejandro | GZ-99 | C | C | C | L | C |
+| Flores Chávez, Fabricio | Elmiau2341 | C | C | C | C | L |
+
+---
+
+#### 5.2.2.3. Sprint Backlog 2.
+
+El objetivo principal del Sprint 2 es implementar la primera versión funcional del Frontend Web Application de TherapyConnect utilizando Angular Framework. Las User Stories seleccionadas cubren los cinco bounded contexts del frontend: IAM (autenticación y perfiles), Session Management (calendario e historial), Communication & Messaging (chat y recomendaciones), Marketplace (catálogo y filtros) y Notifications & Dashboard (notificaciones y dashboards de los tres segmentos).
+
+Trello: 
+
+
+<img src="imagenes/Trello_Sprint2.png">
+
+
+| Sprint # | Sprint 2 |
+|---|---|
+
+| User Story Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| **BC: IAM — Identity & Access Management (Frontend)** | | | | | | | |
+| US03 | Registro de usuario | T101 | Crear componente Register en Angular | Implementar el componente RegisterComponent con formulario reactivo para nombre, correo, contraseña y selector de rol. | 4h | Lopez Torres, Leonardo | To-do |
+| | | T102 | Validaciones del formulario de registro | Implementar validaciones reactivas: campos obligatorios, formato de correo, longitud mínima de contraseña y coincidencia. | 3h | Lopez Torres, Leonardo | To-do |
+| | | T103 | Servicio AuthService — método register() | Implementar el método register() en AuthService que realiza la llamada HTTP POST al endpoint de registro. | 3h | Lopez Torres, Leonardo | To-do |
+| US02 | Inicio de sesión | T104 | Crear componente Login en Angular | Implementar LoginComponent con formulario reactivo de correo y contraseña, y botón de ingreso. | 3h | Lopez Torres, Leonardo | To-do |
+| | | T105 | Servicio AuthService — método login() | Implementar login() en AuthService con llamada HTTP POST, almacenamiento del token JWT y redirección por rol. | 4h | Lopez Torres, Leonardo | To-do |
+| | | T106 | Guard de rutas por rol (AuthGuard) | Implementar AuthGuard para proteger rutas privadas y redirigir al login si el usuario no está autenticado. | 3h | Lopez Torres, Leonardo | To-do |
+| US04 | Configuración de perfil | T107 | Crear componente Profile en Angular | Implementar ProfileComponent con formulario de edición de datos personales y datos del hijo (para padres). | 4h | Lopez Torres, Leonardo | To-do |
+| | | T108 | Servicio ProfileService — getProfile() y updateProfile() | Implementar métodos para obtener y actualizar el perfil del usuario mediante llamadas al API. | 3h | Lopez Torres, Leonardo | To-do |
+| **BC: Session Management (Frontend)** | | | | | | | |
+| US17 | Visualización de calendario | T201 | Integrar librería de calendario en Angular | Instalar y configurar una librería de calendario (ej. FullCalendar o Angular Calendar) en el módulo de sesiones. | 4h | Conde Huashuayo, Sebasthian | To-do |
+| | | T202 | Componente CalendarComponent | Implementar CalendarComponent que muestra sesiones, citas y recordatorios organizados por día y semana. | 5h | Conde Huashuayo, Sebasthian | To-do |
+| | | T203 | Servicio SessionService — getSessions() | Implementar getSessions() en SessionService para obtener las sesiones del usuario y mapearlas al calendario. | 3h | Conde Huashuayo, Sebasthian | To-do |
+| US26 | Acceso a historial de sesiones | T204 | Componente SessionHistoryComponent | Implementar la vista de historial de sesiones con lista ordenada por fecha, estado y resumen de observaciones. | 4h | Conde Huashuayo, Sebasthian | To-do |
+| | | T205 | Componente SessionDetailComponent | Implementar la vista de detalle de sesión mostrando observaciones, evidencias y recomendaciones registradas. | 3h | Conde Huashuayo, Sebasthian | To-do |
+| US07 | Visualización de horarios disponibles | T206 | Componente AvailabilityComponent | Implementar la vista de disponibilidad de terapeutas con selector de fecha y bloques horarios libres/ocupados. | 4h | Conde Huashuayo, Sebasthian | To-do |
+| **BC: Communication & Messaging (Frontend)** | | | | | | | |
+| US18 | Mensajería entre terapeuta y padre | T301 | Componente ChatComponent | Implementar la vista de chat con lista de conversaciones, burbuja de mensajes enviados/recibidos y campo de texto. | 5h | Lopez Montalvo, Kevin | To-do |
+| | | T302 | Servicio MessageService — getConversations() y sendMessage() | Implementar métodos para obtener conversaciones y enviar mensajes mediante llamadas HTTP al API. | 4h | Lopez Montalvo, Kevin | To-do |
+| | | T303 | Componente ConversationListComponent | Implementar la lista de conversaciones activas con preview del último mensaje y estado de lectura. | 3h | Lopez Montalvo, Kevin | To-do |
+| US85 | Envío de recomendaciones a padres | T304 | Componente RecommendationComponent | Implementar la vista de envío y recepción de recomendaciones del terapeuta al padre con formulario de redacción. | 4h | Lopez Montalvo, Kevin | To-do |
+| **BC: Marketplace (Frontend)** | | | | | | | |
+| US111 | Visualización de catálogo de productos | T401 | Componente ProductCatalogComponent | Implementar la vista del catálogo con tarjetas de productos, imagen, nombre, descripción y precio. | 4h | Vilchez Vite, Gabriel | To-do |
+| | | T402 | Componente ProductDetailComponent | Implementar la vista de detalle del producto con descripción completa, beneficios y enlace de compra. | 3h | Vilchez Vite, Gabriel | To-do |
+| | | T403 | Servicio ProductService — getProducts() y getProductById() | Implementar métodos para obtener el listado de productos y el detalle de uno específico. | 3h | Vilchez Vite, Gabriel | To-do |
+| US115 | Filtrado por condición del niño | T404 | Componente ProductFilterComponent | Implementar el panel de filtros por condición (autismo, TDAH, Asperger), tipo de producto y nivel de necesidad. | 4h | Vilchez Vite, Gabriel | To-do |
+| | | T405 | Lógica de filtrado reactivo en el catálogo | Implementar el filtrado reactivo usando RxJS para actualizar el catálogo dinámicamente al aplicar filtros. | 4h | Vilchez Vite, Gabriel | To-do |
+| **BC: Notifications & Dashboard (Frontend)** | | | | | | | |
+| US09 | Recepción de notificaciones | T501 | Componente NotificationBellComponent | Implementar el ícono de campana en el header con contador de notificaciones no leídas. | 3h | Flores Chávez, Fabricio | To-do |
+| | | T502 | Componente NotificationListComponent | Implementar el panel desplegable con la lista de notificaciones ordenadas por fecha. | 3h | Flores Chávez, Fabricio | To-do |
+| | | T503 | Servicio NotificationService — getNotifications() y markAsRead() | Implementar métodos para obtener notificaciones del usuario y marcarlas como leídas. | 3h | Flores Chávez, Fabricio | To-do |
+| US17-D | Visualización de dashboard | T504 | Dashboard de padre de familia | Implementar el dashboard principal del padre con resumen de sesiones próximas, notificaciones recientes y acceso rápido a funcionalidades. | 5h | Flores Chávez, Fabricio | To-do |
+| | | T505 | Dashboard de institución | Implementar el dashboard de la institución con resumen de terapeutas activos, sesiones del día y alertas de gestión. | 5h | Flores Chávez, Fabricio | To-do |
+| | | T506 | Dashboard de profesor/terapeuta | Implementar el dashboard del terapeuta con horario del día, pacientes asignados y sesiones pendientes. | 5h | Flores Chávez, Fabricio | To-do |
+
+**Total de horas estimadas del Sprint 2: 120h**
+
+---
+
+#### 5.2.2.4. Development Evidence for Sprint Review.
+En esta sección se presentan los avances realizados durante el Sprint 2, centrado en el desarrollo de los módulos principales del Frontend Web Application de TherapyConnect en Angular. El objetivo principal fue implementar las funcionalidades clave de los cuatro bounded contexts priorizados: IAM (Identity & Access Management), Profile & Preferences, Session Management y Communication, con el fin de ofrecer una experiencia navegable y funcional para los tres segmentos de usuario: padres de familia, profesores e instituciones terapéuticas.
+---
+
+#### 5.2.2.5. Execution Evidence for Sprint Review.
+
+---
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review.
+Durante el Sprint 2, se avanzó en el desarrollo del Frontend Web Application de TherapyConnect en Angular, habilitando múltiples rutas navegables para los tres segmentos de usuarios autenticados (padres de familia, profesores e instituciones), en una estructura basada en Angular Router, Domain-Driven Design y carga diferida de módulos por bounded context.
+
+Si bien los endpoints REST aún no han sido documentados con OpenAPI dado que el desarrollo del backend con Spring Boot se inicia en el Sprint 3, los recursos navegables disponibles que forman parte del ecosistema de la aplicación se detallan a continuación.
+
+**Descripción del logro:**
+
+- Implementación del Frontend Web Application modular con rutas específicas por rol y bounded context.
+- Estructura basada en Angular Router con lazy loading por módulo (IAM, Profile, Sessions, Communication).
+- Integración visual con Angular Material siguiendo el Design System definido en el Sprint 1.
+- Separación clara por bounded contexts con sus propios componentes, servicios e interfaces TypeScript.
+- Uso de datos mock en los servicios para simular el comportamiento del API hasta la integración con el backend.
+  **Rutas del sistema accesibles (Frontend desplegado):**
+
+| Ruta | Descripción | Segmento |
+|---|---|---|
+| /login | Pantalla de inicio de sesión | Todos |
+| /register | Formulario de registro con selector de rol | Todos |
+| /profile | Configuración de perfil del usuario autenticado | Todos |
+| /calendar | Calendario de sesiones programadas | Padre / Profesor |
+| /appointments/new | Formulario de reserva de cita | Padre |
+| /schedule | Horario semanal del terapeuta | Profesor |
+| /messages | Listado de conversaciones activas | Todos |
+| /messages/:id | Hilo de chat de una conversación específica | Todos |
+| /notifications | Panel de notificaciones del usuario | Todos |
+
+**URL del repositorio Frontend:** [Insertar URL del repositorio Angular]
+---
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.
+Durante el Sprint 2, el equipo Conecta realizó el despliegue de la primera versión pública del Frontend Web Application de TherapyConnect, desarrollado en Angular, utilizando Firebase Hosting como plataforma de despliegue estático.
+
+**Plataforma de despliegue:** Firebase Hosting — https://firebase.google.com/products/hosting
+
+**URL del Frontend desplegado:** [Insertar URL pública de Firebase]
+
+**Proceso de despliegue realizado:**
+
+1. Se creó el proyecto en Firebase Console bajo la cuenta del equipo y se habilitó Firebase Hosting para el repositorio del Frontend.
+2. Se instaló Firebase CLI en el entorno de desarrollo y se ejecutó `firebase login` para autenticar la cuenta del equipo.
+3. Se configuró el archivo `firebase.json` indicando el directorio de salida del build de Angular (`dist/therapy-connect`) como carpeta pública del hosting.
+4. Se ejecutó `ng build --configuration production` para generar el build optimizado del proyecto Angular.
+5. Se ejecutó `firebase deploy` para publicar el build en Firebase Hosting.
+6. Firebase Hosting generó automáticamente la URL pública del frontend desplegado con soporte HTTPS.
+   Adicionalmente, se actualizó la Landing Page desplegada en GitHub Pages con mejoras en el diseño y la incorporación de los call-to-action que redirigen al Frontend Web Application desplegado.
+
+![Deployment Evidence Sprint 2](images/sprint2-deployment-evidence.png)
+
+---
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint.
+Durante el Sprint 2, el equipo Conecta adoptó estrategias de colaboración eficaces que permitieron un desarrollo fluido y bien organizado del Frontend Web Application en Angular. Las prácticas aplicadas fueron las siguientes:
+
+Se crearon ramas específicas por bounded context y User Story, siguiendo la convención `feature/US{id}-descripcion`, creadas desde la rama develop. Esto facilitó el trabajo en paralelo sin conflictos y mantuvo la estructura del repositorio organizada por funcionalidad.
+
+Todas las funcionalidades se integraron a la rama develop mediante Pull Requests, garantizando el control de calidad a través de revisiones cruzadas entre integrantes antes de aprobar cada merge.
+
+La comunicación entre los miembros del equipo fue constante, utilizando WhatsApp y Google Meet como canales principales para la coordinación diaria, la resolución de dudas técnicas y la toma de decisiones sobre el diseño de componentes. Se aplicaron buenas prácticas de control de versiones con Git, incluyendo descripciones claras en los commits, ramas temáticas por bounded context y revisión colaborativa mediante Pull Requests. El equipo también se enfocó en la consistencia visual y estructural del código, siguiendo el Angular Style Guide y los Style Guidelines definidos en el Sprint 1.
+
+**Organización GitHub del equipo:**
+https://github.com/1ASI0729-2610-11913
+
+**Repositorio Frontend Web Application:**
+[Insertar URL del repositorio Angular]
+
+![GitHub Contributors Sprint 2](images/sprint2-github-contributors.png)
