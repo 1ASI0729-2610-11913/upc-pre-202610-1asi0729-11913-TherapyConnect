@@ -299,7 +299,10 @@ https://miro.com/welcomeonboard/Q214SXhPODErVUZjaHUvNUt2LzgwSVFpREhBaERFZXpZZy9I
 ---
 
 # 2.4. Big Picture Event Storming.
+https://miro.com/welcomeonboard/U0JDYlhXSERXQ3lIQWlOMHRiSWZ2Y1Znak52YjQ2TC9vcmEyMnNjV0dIekRFNUs3TDdJaGlFVXpkMmFrRjQ4SmcrNzFNMWk0Y0xKOXY0MlNVbDZnUHV6MkF0aFNORW82bmkraVJsYkNudy9VZ2JWNVRsTlQ2ajdJSDZWSjdBOUt3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=438460568400
 
+
+<img src="imagenes/BigPicture.png">
 <em>Figura 16. Big Picture Event Storming.</em>
 
 ---
