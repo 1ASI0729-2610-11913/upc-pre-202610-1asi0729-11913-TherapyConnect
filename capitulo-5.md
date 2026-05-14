@@ -399,7 +399,7 @@ Para el Sprint 2, el equipo organizó el trabajo en función de los bounded cont
 
 El objetivo principal del Sprint 2 es implementar la primera versión funcional del Frontend Web Application de TherapyConnect utilizando Angular Framework. Las User Stories seleccionadas cubren los cinco bounded contexts del frontend: IAM (autenticación y perfiles), Session Management (calendario e historial), Communication & Messaging (chat y recomendaciones), Marketplace (catálogo y filtros) y Notifications & Dashboard (notificaciones y dashboards de los tres segmentos).
 
-Trello: 
+Trello: https://trello.com/invite/b/6a062855181f0f84bf6c383b/ATTI97c674eb289fbc1f56c27b91921d9b347C8CA25F/therapyconnect-sprint-2
 
 
 <img src="imagenes/Trello_Sprint2.png">
@@ -451,6 +451,7 @@ Trello:
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 En esta sección se presentan los avances realizados durante el Sprint 2, centrado en el desarrollo de los módulos principales del Frontend Web Application de TherapyConnect en Angular. El objetivo principal fue implementar las funcionalidades clave de los cuatro bounded contexts priorizados: IAM (Identity & Access Management), Profile & Preferences, Session Management y Communication, con el fin de ofrecer una experiencia navegable y funcional para los tres segmentos de usuario: padres de familia, profesores e instituciones terapéuticas.
+
 ---
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
@@ -483,7 +484,8 @@ Si bien los endpoints REST aún no han sido documentados con OpenAPI dado que el
 | /messages/:id | Hilo de chat de una conversación específica | Todos |
 | /notifications | Panel de notificaciones del usuario | Todos |
 
-**URL del repositorio Frontend:** [Insertar URL del repositorio Angular]
+**URL del repositorio Frontend:** https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect-frontend.git
+
 ---
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
@@ -520,6 +522,6 @@ La comunicación entre los miembros del equipo fue constante, utilizando WhatsAp
 https://github.com/1ASI0729-2610-11913
 
 **Repositorio Frontend Web Application:**
-[Insertar URL del repositorio Angular]
+https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect-frontend.git
 
 ![GitHub Contributors Sprint 2](images/sprint2-github-contributors.png)
