@@ -38,8 +38,8 @@ Los repositorios establecidos para cada producto de la solución son los siguien
 |---|---|
 | Startup / Informe | https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect.git |
 | Landing Page | https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect-website.git |
-| Frontend Web Application | (por definir — se creará bajo la misma organización) |
-| RESTful Web Services | (por definir — se creará bajo la misma organización) |
+| Frontend Web Application | https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect-frontend.git |
+| RESTful Web Services | https://github.com/1ASI0729-2610-11913/Backend-TherpyConnect.git |
 
 #### GitFlow Workflow
 
