@@ -191,7 +191,7 @@ Las épicas cubren los tres segmentos de la plataforma: padres de familia, insti
 
 El Impact Mapping de TherapyConnect es un diagrama estratégico que resume la hoja de ruta para digitalizar la gestión terapéutica. El mapa evidencia cómo el sistema elimina la desorganización operativa de las instituciones y empodera a los padres mediante herramientas de seguimiento y aprendizaje adaptado en casa. En esencia, conecta los objetivos de negocio con User Stories específicas para asegurar un tratamiento integral, transparente y eficiente.
 
-<img src="imagenes/Imagen1.png">
+<Img src="imagenes/Imagen1.png">
 
 El Impact Mapping es una herramienta que conecta los objetivos del proyecto con los resultados esperados y las acciones necesarias. Permite identificar quiénes están involucrados, qué cambios se buscan y cómo se lograrán. Ayuda a enfocar el desarrollo en generar valor real para el usuario.
 
