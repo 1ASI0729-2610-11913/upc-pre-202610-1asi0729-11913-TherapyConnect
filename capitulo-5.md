@@ -387,7 +387,7 @@ Para el Sprint 2, el equipo organizó el trabajo en función de los bounded cont
 
 | Team Member (Last Name, First Name) | GitHub Username | IAM Frontend L / C | Session Management L / C | Communication & Messaging L / C | Marketplace Frontend L / C | Notifications & Dashboard L / C |
 |---|---|---|---|---|---|---|
-| Lopez Torres, Leonardo Gabriel | | L | C | C | C | C |
+| Lopez Torres, Leonardo Gabriel |Deiko-138  | L | C | C | C | C |
 | Lopez Montalvo, Kevin Edu | Lopescamos | C | C | L | C | C |
 | Conde Huashuayo, Sebasthian Alex | SebasthianAlexCH | C | L | C | C | C |
 | Vilchez Vite, Gabriel Alejandro | GZ-99 | C | C | C | L | C |
