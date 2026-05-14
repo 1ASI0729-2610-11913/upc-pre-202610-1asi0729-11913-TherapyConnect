@@ -9,14 +9,13 @@ Ciclo 2026-1
 Open Source
 NRC:
 
-Docente:
+Docente: Flores Moroc, Juan Antonio
 
-Startup:
+Startup: TherapyConect
 
-Producto:
+Producto: Software
 
 Integrantes:
-
 Lopez Torres, Leonardo Gabriel - U20241A649
 Lopez Montalvo, Kevin Edu - U20241D958
 Conde Huashuayo, Sebasthian Alex - U20241E356
@@ -48,7 +47,7 @@ Abril, 2026
 
 **Abril - 2026**
 
-
+# WEBSITE: https://1asi0729-2610-11913.github.io/upc-pre-202610-1asi0729-11913-TherapyConnect-website/ 
 </div>
 
 ---
