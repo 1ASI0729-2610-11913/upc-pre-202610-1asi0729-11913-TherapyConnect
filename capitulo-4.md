@@ -1024,8 +1024,6 @@ El wireflow muestra el flujo de navegación del usuario como un grafo, donde cad
 ## 4.4.4. Web Applications User Flow Diagrams
 
 
-*(Ver diagramas en el repositorio de Figma / Lucidchart adjunto)*
-
 ---
 
 # 4.5. Web Applications Prototyping
