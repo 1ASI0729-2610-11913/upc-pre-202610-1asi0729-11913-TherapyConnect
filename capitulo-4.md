@@ -833,25 +833,47 @@ Para el desarrollo de wireframes, mock-ups y prototipos interactivos se utilizó
 
 ### Segmento Padres
 
+<img src="imagenes/a">
+
 **Inicio de sesión:** La interfaz presenta un diseño limpio con una ilustración amigable de una familia y métricas sobre el progreso de los hijos, junto a un formulario lateral para ingresar con correo y contraseña. Esta pantalla tiene la función de autenticar a los tutores legales en la plataforma, permitiéndoles acceder al seguimiento terapéutico de sus hijos y ofreciendo opciones de recuperación de cuenta o registro para nuevos usuarios.
+
+<img src="imagenes/">
 
 **Dashboard principal:** El panel ofrece un resumen ejecutivo que incluye el nombre del hijo, Mateo, su nivel de progreso actual y accesos rápidos a las próximas sesiones programadas y reportes recientes. Su función es centralizar la información más relevante para la familia, permitiéndoles visualizar de un vistazo el estado general del tratamiento, las notificaciones pendientes y el calendario de actividades terapéuticas de la semana.
 
+<img src="imagenes/">
+
 **Calendario de actividades:** Esta pantalla muestra el calendario de actividades del niño, donde se detallan las sesiones de terapia individual, grupal y talleres extracurriculares mediante bloques de tiempo organizados por días. La función de este módulo es permitir a los padres coordinar la logística familiar con el plan de intervención, facilitando la visualización de los horarios, los especialistas a cargo y los lugares específicos (aulas o virtual) donde se llevarán a cabo las sesiones.
+
+<img src="imagenes/">
 
 **Reportes de progreso:** La vista presenta gráficos de barras y líneas que cuantifican el avance del niño en áreas específicas como comunicación, habilidades sociales y conducta durante los últimos meses. Este apartado cumple la función de informar a los padres de manera objetiva sobre los resultados del tratamiento, permitiéndoles descargar informes detallados y entender las tendencias de mejora o las áreas que requieren mayor refuerzo en casa.
 
+<img src="imagenes/">
+
 **Comunicación y solicitudes:** La interfaz permite a los padres enviar mensajes directos a los especialistas, solicitar cambios de horario o pedir nuevas citas mediante un sistema de formularios simplificado. Su función es agilizar el contacto entre la familia y el centro terapéutico, asegurando que todas las peticiones queden registradas oficialmente y permitiendo un seguimiento transparente del estado de cada solicitud enviada.
+
+<img src="imagenes/">
 
 **Historial de citas:** La interfaz presenta una tabla cronológica con las sesiones pasadas de Mateo, indicando la fecha, el tipo de terapia (individual o grupal) y el estado de asistencia, acompañada de un botón para ver los apuntes del especialista. Esta pantalla tiene la función de permitir a los padres llevar un control histórico de las intervenciones recibidas, facilitando el acceso a las observaciones de los terapeutas y la descarga de documentos relacionados con cada encuentro para su archivo personal.
 
+<img src="imagenes/">
+
 **Detalle de sesión:** Esta pantalla despliega la información específica de una cita seleccionada, incluyendo el nombre del especialista a cargo, los objetivos planteados para ese día y un resumen de las actividades realizadas. Su función es brindar total transparencia sobre el trabajo terapéutico en curso, permitiendo que la familia comprenda qué habilidades se están reforzando y reciba recomendaciones directas del profesional para dar continuidad al aprendizaje fuera del centro.
+
+<img src="imagenes/">
 
 **Gestión de perfil del hijo:** La vista centraliza la información clínica y personal del niño, mostrando datos como el diagnóstico, edad, alergias y documentos cargados como certificados o informes externos. Este apartado cumple la función de ser el repositorio oficial de la historia del paciente dentro de la plataforma, permitiendo a los padres mantener actualizada la ficha médica y compartirla fácilmente con los diferentes especialistas que intervienen en el tratamiento.
 
+<img src="imagenes/">
+
 **Notificaciones y alertas:** La interfaz organiza de manera vertical los avisos recientes, como recordatorios de próximas citas, mensajes nuevos del terapeuta o alertas sobre la publicación de nuevos reportes de progreso. La función de esta pantalla es asegurar que los padres estén siempre informados sobre cualquier novedad relevante en el proceso terapéutico de su hijo, permitiéndoles actuar rápidamente ante cambios de horario o requerimientos de información por parte del centro.
 
+<img src="imagenes/">
+
 **Nueva solicitud de sesión (modal):** El modal presenta un formulario interactivo donde los padres pueden seleccionar el tipo de servicio requerido, el motivo de la consulta y proponer rangos de fecha y hora para una cita adicional o de emergencia. Su función es agilizar el proceso de agendamiento, proporcionando un canal directo y estructurado para que la familia pueda solicitar apoyo extra sin necesidad de llamadas telefónicas, quedando la petición a la espera de la confirmación del especialista.
+
+<img src="imagenes/">
 
 **Configuración de perfil:** La interfaz presenta el panel de "Configuración de perfil" del padre o tutor, donde se muestran campos para editar datos personales como nombre, correo electrónico, número de teléfono y la posibilidad de cambiar la foto de perfil. Esta pantalla tiene la función de permitir al usuario gestionar su propia información de contacto y preferencias de cuenta, asegurando que los datos de comunicación con el centro terapéutico estén actualizados y permitiendo también la gestión de la seguridad de la cuenta mediante opciones para modificar la contraseña de acceso.
 
@@ -871,39 +893,75 @@ El wireflow muestra el flujo de navegación del usuario como un grafo, donde cad
 
 ### Segmento Especialistas
 
+<img src="imagenes/ApplicationMockUp1.png">
+
 **Inicio de sesión:** La pantalla presenta una estructura de dos columnas donde la parte izquierda muestra una ilustración educativa con métricas de estudiantes y el texto "Bienvenido de vuelta, Profesor", mientras que la derecha contiene el formulario de acceso con campos para correo y contraseña. Su función principal es permitir el ingreso seguro de los especialistas a la plataforma, ofreciendo además opciones de autenticación rápida a través de una cuenta de Google y un enlace para el registro de nuevos usuarios.
+
+<img src="imagenes/ApplicationMockUp2.png">
 
 **Recuperación de contraseña:** La interfaz consiste en un módulo minimalista centrado que solicita el correo institucional del usuario para restablecer el acceso a la cuenta en caso de olvido. Este apartado cumple la función de gestionar la seguridad de las credenciales, enviando un enlace de restauración de forma automática y mostrando una notificación de éxito en color verde cuando el proceso se ha iniciado correctamente.
 
+<img src="imagenes/ApplicationMockUp3.png">
+
 **Perfil del especialista:** El panel muestra de forma detallada los datos personales, la especialidad en psicología clínica y una descripción profesional del Dr. Roberto García, acompañados de un menú lateral de navegación con acceso a mensajes y calendario. Esta sección tiene la función de actuar como el centro de configuración de identidad del profesional, permitiéndole editar su información pública y gestionar las herramientas operativas de su consulta.
+
+<img src="imagenes/ApplicationMockUp4.png">
 
 **Disponibilidad y seguridad:** Se observa un calendario semanal donde el usuario puede activar o desactivar sus días de atención y definir rangos horarios específicos para las citas. La función de esta pantalla es permitir la organización de la agenda laboral del psicólogo y proporcionar herramientas de control de cuenta, como la visualización de sesiones activas en otros dispositivos y el cierre remoto de las mismas.
 
+<img src="imagenes/ApplicationMockUp5.png">
+
 **Modal de cambio de contraseña:** Es una ventana emergente que se activa sobre la vista de perfil, diseñada con campos para la clave actual y la nueva, incluyendo una lista de requisitos técnicos de seguridad. Su función es garantizar que el usuario pueda actualizar sus métodos de acceso cumpliendo con estándares de robustez, verificando en tiempo real si la nueva contraseña posee la complejidad necesaria para proteger la información.
+
+<img src="imagenes/ApplicationMockUp6.png">
 
 **Dashboard (Panel de control):** Presenta un saludo personalizado al Dr. Alejandro junto a cuatro tarjetas de resumen que cuantifican las sesiones del día, de la semana, solicitudes nuevas y notificaciones, además de un listado central de la agenda diaria. Su función es centralizar la gestión administrativa del profesional, ofreciendo un acceso directo a los detalles de cada cita y una vista rápida del calendario semanal para optimizar la organización del tiempo de trabajo.
 
+<img src="imagenes/ApplicationMockUp7.png">
+
 **Calendario semanal:** Esta pantalla despliega un calendario semanal detallado con una línea de tiempo roja que indica la hora actual y diversos bloques de colores que representan sesiones grupales, privadas y de emergencia distribuidas en diferentes aulas. La función de este módulo es permitir la planificación y el monitoreo logístico de todas las actividades terapéuticas, brindando al usuario una visión clara de la ocupación de espacios y los horarios asignados para cada tipo de intervención.
+
+<img src="imagenes/ApplicationMockUp8.png">
 
 **Detalle de sesión (modal):** Se observa una ventana emergente titulada "Detalle de sesión" que superpone información específica sobre el paciente Mateo García, incluyendo su edad, nivel de TEA, aula asignada y el profesor responsable. Este componente tiene la función de actuar como un paso de verificación y control antes de comenzar una actividad, permitiendo al usuario iniciar la sesión de inmediato o consultar el historial de encuentros previos con el mismo niño para contextualizar la atención.
 
+<img src="imagenes/ApplicationMockUp9.png">
+
 **Historial de sesiones:** La interfaz muestra una tabla organizada con filtros por paciente, fecha y tipo de sesión, complementada por métricas en la parte inferior que suman el total de sesiones completadas y el tiempo total de atención en minutos. Su función principal es el almacenamiento y la auditoría de la labor clínica, permitiendo al especialista realizar búsquedas históricas, revisar apuntes de citas pasadas y analizar datos estadísticos sobre su productividad y el cumplimiento de las metas terapéuticas.
+
+<img src="imagenes/ApplicationMockUp10.png">
 
 **Videollamada activa:** La interfaz muestra una sesión de videollamada activa donde se visualiza a una profesional en una toma de oficina, acompañada de un panel lateral derecho titulado "Registro" que contiene listas de verificación sobre atención, comunicación y conducta. Esta pantalla cumple la función de facilitar la teleconsulta terapéutica, permitiendo al especialista evaluar criterios clínicos en tiempo real mediante checklists mientras mantiene la interacción visual con el paciente para asegurar un seguimiento preciso del comportamiento.
 
+<img src="imagenes/ApplicationMockUp11.png">
+
 **Solicitudes pendientes:** La pantalla muestra el listado de "Solicitudes" pendientes para el Prof. Martínez, presentando tarjetas individuales de padres como Ana García y Carlos Ruiz con detalles sobre el tipo de clase y la urgencia de respuesta. Esta interfaz tiene la función de centralizar las peticiones de nuevas sesiones, permitiendo al docente gestionar su carga de trabajo mediante botones directos para aceptar, rechazar o visualizar rápidamente la información de contacto de cada alumno.
+
+<img src="imagenes/ApplicationMockUp12.png">
 
 **Detalle de solicitud (modal):** Esta interfaz presenta un modal de "Detalle de solicitud" que profundiza en la petición de Ana García para su hijo Mateo, especificando que se requiere una visita a domicilio para apoyo en comunicación funcional. Su función es proporcionar al profesional todo el contexto necesario, incluyendo la dirección exacta y el diagnóstico del alumno, para que pueda tomar una decisión informada antes de confirmar o denegar la sesión de apoyo.
 
+<img src="imagenes/ApplicationMockUp13.png">
+
 **Programar sesión (modal):** La imagen despliega una ventana de confirmación titulada "Programar sesión con Mateo", donde el usuario puede definir la fecha, hora de inicio, duración y modalidad presencial tras haber aceptado la solicitud previa. La función de este componente es formalizar la cita en el sistema, asegurando que la sesión se agregue automáticamente al calendario del profesor y se genere una notificación de éxito para ambas partes.
+
+<img src="imagenes/ApplicationMockUp14.png">
 
 **Rechazar solicitud (modal):** Se observa un modal de "Rechazar solicitud" que permite al profesional seleccionar un motivo formal, como la falta de disponibilidad, e incluir un mensaje personalizado de recomendación para los padres. Esta pantalla cumple la función de gestionar las expectativas del solicitante de manera profesional y empática, manteniendo una comunicación clara sobre por qué no se puede realizar la sesión en ese momento.
 
+<img src="imagenes/ApplicationMockUp15.png">
+
 **Notificaciones:** El panel organiza cronológicamente avisos críticos, como emergencias de salud de alumnos, asignaciones de nuevas clases de matemáticas y cambios de horario por conflictos de aula. Su función es mantener al docente actualizado en tiempo real sobre cualquier alteración en su rutina académica o situaciones que requieren atención inmediata, permitiendo una respuesta rápida mediante botones de acción integrados en cada alerta.
+
+<img src="imagenes/ApplicationMockUp16.png">
 
 **Mis apuntes:** La interfaz muestra un historial detallado de notas pedagógicas y clínicas, destacando una entrada sobre el progreso de Mateo García en una sesión de fracciones y decimales con categorías de comportamiento y actitud. Su función es permitir al profesional documentar observaciones cualitativas, registrar hitos de aprendizaje y establecer pasos recomendados para futuras sesiones, manteniendo un vínculo directo con la grabación de la clase para una revisión exhaustiva del desempeño del alumno.
 
+<img src="imagenes/ApplicationMockUp17.png">
+
 **Sesiones grupales:** Esta pantalla presenta tarjetas informativas para actividades colectivas como el "Grupo Arcoíris" y el "Grupo Exploradores", detallando horarios, aulas y una tabla de reuniones confirmadas o pendientes. La función de este panel es facilitar la gestión de terapias grupales y talleres de habilidades sociales, permitiendo al especialista iniciar la sesión de forma inmediata o consultar la lista de participantes e instituciones educativas vinculadas a cada evento programado.
+
+<img src="imagenes/ApplicationMockUp18.png">
 
 **Centro de Emergencias:** Muestra un interruptor de disponibilidad inmediata seguido de una alerta crítica de color rojo por una crisis de ansiedad en el Aula 4B, junto con un historial de incidentes resueltos como caídas o desmayos. Su función primordial es actuar como un canal de respuesta rápida ante situaciones de riesgo, permitiendo a los jefes médicos o especialistas recibir notificaciones prioritarias, responder a emergencias activas en tiempo real y reportar incidentes menores ocurridos durante sus turnos.
 
@@ -911,27 +969,51 @@ El wireflow muestra el flujo de navegación del usuario como un grafo, donde cad
 
 ### Segmento Padres
 
+<img src="imagenes/ApplicationMockUp19.png">
+
 **Inicio de sesión (versión 1):** La interfaz presenta un diseño limpio con una ilustración amigable de una familia y métricas sobre el progreso de los hijos, junto a un formulario lateral para ingresar con correo y contraseña. Esta pantalla tiene la función de autenticar a los tutores legales en la plataforma, permitiéndoles acceder al seguimiento terapéutico de sus hijos y ofreciendo opciones de recuperación de cuenta o registro para nuevos usuarios.
+
+<img src="imagenes/ApplicationMockUp20.png">
 
 **Inicio de sesión (versión 2):** La pantalla presenta una composición visual cálida con una fotografía de una madre e hija compartiendo un momento de aprendizaje, contrastada con un formulario de acceso limpio que incluye logotipos de TherapyConnect y opciones para entrar con Google. Esta interfaz tiene la función de validar la identidad de los familiares, permitiéndoles acceder de forma segura a la plataforma personalizada donde pueden supervisar el desarrollo terapéutico de sus hijos y gestionar las credenciales de su cuenta.
 
+<img src="imagenes/ApplicationMockUp21.png">
+
 **Dashboard principal:** El panel muestra un saludo personalizado para la madre, María García, junto a un resumen visual que destaca el perfil de su hijo Mateo, su nivel de progreso actual y una tarjeta informativa sobre la próxima sesión programada. Su función es servir como el centro operativo para la familia, facilitando el acceso inmediato a las métricas de avance del niño, las notificaciones urgentes del centro y el calendario de citas para asegurar una participación activa en el tratamiento.
+
+<img src="imagenes/ApplicationMockUp22.png">
 
 **Calendario mensual:** Esta interfaz despliega el calendario mensual de actividades de Mateo, utilizando etiquetas de colores para diferenciar entre sesiones de terapia presencial, virtual y talleres grupales en una cuadrícula de tiempo organizada. La función de este módulo es permitir a los padres organizar la agenda familiar en sincronía con el plan terapéutico, ofreciendo una visión clara de los horarios confirmados, los especialistas asignados y permitiendo la visualización detallada de cada cita con un solo clic.
 
+<img src="imagenes/ApplicationMockUp23.png">
+
 **Reportes de progreso:** La vista presenta una serie de gráficos analíticos que muestran el desempeño del niño en áreas clave como comunicación funcional y habilidades sociales, comparando los datos actuales con los de meses anteriores. Este apartado cumple la función de proporcionar evidencia cuantitativa del avance terapéutico a los padres, ayudándoles a comprender las fortalezas y áreas de oportunidad de su hijo mediante reportes descargables y visualizaciones fáciles de interpretar.
+
+<img src="imagenes/ApplicationMockUp24.png">
 
 **Historial de sesiones:** La pantalla presenta un listado detallado de todas las citas completadas, indicando la fecha, el terapeuta responsable y el estado de la sesión, acompañada de botones para revisar los apuntes clínicos detallados. Su función es ofrecer una trazabilidad completa del proceso terapéutico, permitiendo a los padres consultar las observaciones dejadas por los especialistas después de cada encuentro y descargar los materiales o recomendaciones específicas para trabajar en el hogar.
 
+<img src="imagenes/ApplicationMockUp25.png">
+
 **Detalle de sesión:** Esta pantalla despliega la información específica de una cita seleccionada, incluyendo el nombre del especialista a cargo, los objetivos planteados para ese día y un resumen de las actividades realizadas. Su función es brindar total transparencia sobre el trabajo terapéutico en curso, permitiendo que la familia comprenda qué habilidades se están reforzando y reciba recomendaciones directas del profesional para dar continuidad al aprendizaje fuera del centro.
+
+<img src="imagenes/ApplicationMockUp26.png">
 
 **Solicitudes enviadas:** La interfaz presenta el listado de "Solicitudes enviadas" por los padres, mostrando tarjetas organizadas con el tipo de sesión requerida, la fecha de creación y una etiqueta de estado de color naranja que indica que la petición está "Pendiente". Su función es permitir a la familia llevar un seguimiento en tiempo real de sus requerimientos de nuevas citas o cambios de horario, ofreciendo un canal transparente para verificar si el especialista ya ha revisado o aceptado la solicitud de atención para su hijo.
 
+<img src="imagenes/ApplicationMockUp27.png">
+
 **Detalle de solicitud aceptada:** Esta pantalla muestra el detalle de una solicitud específica aceptada, donde se confirma la programación de una sesión presencial de apoyo en comunicación funcional para Mateo García con la fecha y hora acordadas. La función de este apartado es servir como comprobante de agendamiento, proporcionando a los padres la información logística completa y la opción de añadir el evento a su calendario personal para asegurar la asistencia a la terapia.
+
+<img src="imagenes/ApplicationMockUp28.png">
 
 **Notificaciones:** El panel despliega una lista cronológica de alertas interactivas, como avisos de sesiones que están por comenzar, confirmaciones de nuevas citas y alertas de salud prioritarias. Esta sección tiene la función de mantener a los tutores informados sobre cualquier actualización crítica en el proceso terapéutico, permitiéndoles reaccionar de inmediato a mensajes de los especialistas o cambios de último minuto en la programación escolar y clínica.
 
+<img src="imagenes/ApplicationMockUp29.png">
+
 **Mensajes:** La interfaz de "Mensajes" ofrece un sistema de chat directo y privado entre los padres y el equipo terapéutico, con una lista de contactos a la izquierda y una ventana de conversación activa a la derecha que permite el envío de textos y archivos adjuntos. Su función es facilitar una comunicación fluida y constante para resolver dudas rápidas, coordinar detalles del tratamiento diario y compartir observaciones relevantes sobre el comportamiento del niño en casa sin necesidad de esperar a la siguiente sesión presencial.
+
+<img src="imagenes/ApplicationMockUp30.png">
 
 **Perfil del padre:** La pantalla muestra la información de cuenta de María García, incluyendo su foto, datos de contacto y una sección dedicada a la gestión de la seguridad con opciones para actualizar la contraseña y revisar las sesiones activas. Esta pantalla cumple la función de permitir al usuario administrar su identidad digital dentro de la plataforma, asegurando que sus datos personales estén correctos y proporcionando herramientas de privacidad para proteger el acceso a la información sensible del menor bajo su tutela.
 
@@ -941,13 +1023,16 @@ El wireflow muestra el flujo de navegación del usuario como un grafo, donde cad
 
 ## 4.4.4. Web Applications User Flow Diagrams
 
+
 *(Ver diagramas en el repositorio de Figma / Lucidchart adjunto)*
 
 ---
 
 # 4.5. Web Applications Prototyping
 
-**Archivo de prototipo:** `Desktop 2026.04.24 - 02.41.18.07.mp4`
+<img src="imagenes/Prototype.png">
+
+**Archivo de prototipo:**  https://upcedupe-my.sharepoint.com/personal/u20241a649_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20241a649_upc_edu_pe%2FDocuments%2FDesktop%202026%2E04%2E24%20-%2002%2E41%2E18%2E07%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E2671e79a-aaf2-4548-b36a-c0996b568b20
 
 ---
 
@@ -955,11 +1040,11 @@ El wireflow muestra el flujo de navegación del usuario como un grafo, donde cad
 
 ## 4.6.1. Design-Level Event Storming
 
-<img src="imagenes/">
+<img src="imagenes/structura.png">
 
 🔗 [Ver en Structurizr](https://structurizr.com/share/109683)
 
-<img src="imagenes/">
+<img src="imagenes/miro.png">
 
 🔗 [Ver en Miro](https://miro.com/app/board/uXjVGhf69Qs=/?share_link_id=873187948679)
 
