@@ -1101,6 +1101,7 @@ El wireflow muestra el flujo de navegación del usuario como un grafo, donde cad
 
 <img src="imagenes/diagrama_3.png">
 
+<img src="imagenes/diagrama_5.png">
 
 ---
 
