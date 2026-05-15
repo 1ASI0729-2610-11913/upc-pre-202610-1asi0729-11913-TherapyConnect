@@ -297,9 +297,12 @@ El As-Is Scenario Mapping describe cómo es la situación actual del usuario ant
 https://miro.com/welcomeonboard/Q214SXhPODErVUZjaHUvNUt2LzgwSVFpREhBaERFZXpZZy9INmdwbXdzSnAyR2JEQXF3czVhYUVLQVEwOCtDRGpVSlJFOTFnNTArNFp4ZkRMcXowSVBZTFp0YlM1eE94OGxDZkw5a21YU3VST3RZbGhjWHZMVXpRUTkrZm1oWDZBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=638772895973
 
 ---
-
+<img src="imagenes/as-is-padres.png">
 # 2.4. Big Picture Event Storming.
 
+https://miro.com/welcomeonboard/U0JDYlhXSERXQ3lIQWlOMHRiSWZ2Y1Znak52YjQ2TC9vcmEyMnNjV0dIekRFNUs3TDdJaGlFVXpkMmFrRjQ4SmcrNzFNMWk0Y0xKOXY0MlNVbDZnUHV6MkF0aFNORW82bmkraVJsYkNudy9VZ2JWNVRsTlQ2ajdJSDZWSjdBOUt3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=438460568400
+
+<img src="imagenes/BigPicture.jpg">
 <em>Figura 16. Big Picture Event Storming.</em>
 
 ---

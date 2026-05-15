@@ -31,11 +31,11 @@ Abril, 2026
 
 **Ciclo:** 2026 - 01  
 **Curso:** Desarrollo de Aplicaciones Open Source  
-**NRC:**   
-**Docente:**
+**NRC: 11913**   
+**Docente: Flores Moroco Juan Antonio **
 
-**Startup:**   
-**Producto:**
+**Startup: Conecta**   
+**Producto: TherapyConnect**
 
 | Código      | Nombre                           |
 |-------------|----------------------------------|
@@ -47,8 +47,12 @@ Abril, 2026
 
 **Abril - 2026**
 
+WEBSITE: https://1asi0729-2610-11913.github.io/upc-pre-202610-1asi0729-11913-TherapyConnect-website/ 
+
+---
 # WEBSITE: https://1asi0729-2610-11913.github.io/upc-pre-202610-1asi0729-11913-TherapyConnect-website/ 
 </div>
+
 
 ---
 # Registro de Versiones del Informe
