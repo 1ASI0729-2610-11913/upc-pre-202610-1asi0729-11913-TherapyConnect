@@ -833,47 +833,47 @@ Para el desarrollo de wireframes, mock-ups y prototipos interactivos se utilizó
 
 ### Segmento Padres
 
-<img src="imagenes/a">
+<img src="imagenes/Applicationwireframes17.png">
 
 **Inicio de sesión:** La interfaz presenta un diseño limpio con una ilustración amigable de una familia y métricas sobre el progreso de los hijos, junto a un formulario lateral para ingresar con correo y contraseña. Esta pantalla tiene la función de autenticar a los tutores legales en la plataforma, permitiéndoles acceder al seguimiento terapéutico de sus hijos y ofreciendo opciones de recuperación de cuenta o registro para nuevos usuarios.
 
-<img src="imagenes/">
+<img src="imagenes/Applicationwireframes18.png">
 
 **Dashboard principal:** El panel ofrece un resumen ejecutivo que incluye el nombre del hijo, Mateo, su nivel de progreso actual y accesos rápidos a las próximas sesiones programadas y reportes recientes. Su función es centralizar la información más relevante para la familia, permitiéndoles visualizar de un vistazo el estado general del tratamiento, las notificaciones pendientes y el calendario de actividades terapéuticas de la semana.
 
-<img src="imagenes/">
+<img src="imagenes/Applicationwireframes19.png">
 
 **Calendario de actividades:** Esta pantalla muestra el calendario de actividades del niño, donde se detallan las sesiones de terapia individual, grupal y talleres extracurriculares mediante bloques de tiempo organizados por días. La función de este módulo es permitir a los padres coordinar la logística familiar con el plan de intervención, facilitando la visualización de los horarios, los especialistas a cargo y los lugares específicos (aulas o virtual) donde se llevarán a cabo las sesiones.
 
-<img src="imagenes/">
+<img src="imagenes/Applicationwireframes20.png">
 
 **Reportes de progreso:** La vista presenta gráficos de barras y líneas que cuantifican el avance del niño en áreas específicas como comunicación, habilidades sociales y conducta durante los últimos meses. Este apartado cumple la función de informar a los padres de manera objetiva sobre los resultados del tratamiento, permitiéndoles descargar informes detallados y entender las tendencias de mejora o las áreas que requieren mayor refuerzo en casa.
 
-<img src="imagenes/">
+<img src="imagenes/Applicationwireframes21.png">
 
 **Comunicación y solicitudes:** La interfaz permite a los padres enviar mensajes directos a los especialistas, solicitar cambios de horario o pedir nuevas citas mediante un sistema de formularios simplificado. Su función es agilizar el contacto entre la familia y el centro terapéutico, asegurando que todas las peticiones queden registradas oficialmente y permitiendo un seguimiento transparente del estado de cada solicitud enviada.
 
-<img src="imagenes/">
+<img src="imagenes/Applicationwireframes22.png">
 
 **Historial de citas:** La interfaz presenta una tabla cronológica con las sesiones pasadas de Mateo, indicando la fecha, el tipo de terapia (individual o grupal) y el estado de asistencia, acompañada de un botón para ver los apuntes del especialista. Esta pantalla tiene la función de permitir a los padres llevar un control histórico de las intervenciones recibidas, facilitando el acceso a las observaciones de los terapeutas y la descarga de documentos relacionados con cada encuentro para su archivo personal.
 
-<img src="imagenes/">
+<img src="imagenes/Applicationwireframes23.png">
 
 **Detalle de sesión:** Esta pantalla despliega la información específica de una cita seleccionada, incluyendo el nombre del especialista a cargo, los objetivos planteados para ese día y un resumen de las actividades realizadas. Su función es brindar total transparencia sobre el trabajo terapéutico en curso, permitiendo que la familia comprenda qué habilidades se están reforzando y reciba recomendaciones directas del profesional para dar continuidad al aprendizaje fuera del centro.
 
-<img src="imagenes/">
+<img src="imagenes/Applicationwireframes24.png">
 
 **Gestión de perfil del hijo:** La vista centraliza la información clínica y personal del niño, mostrando datos como el diagnóstico, edad, alergias y documentos cargados como certificados o informes externos. Este apartado cumple la función de ser el repositorio oficial de la historia del paciente dentro de la plataforma, permitiendo a los padres mantener actualizada la ficha médica y compartirla fácilmente con los diferentes especialistas que intervienen en el tratamiento.
 
-<img src="imagenes/">
+<img src="imagenes/Applicationwireframes25.png">
 
 **Notificaciones y alertas:** La interfaz organiza de manera vertical los avisos recientes, como recordatorios de próximas citas, mensajes nuevos del terapeuta o alertas sobre la publicación de nuevos reportes de progreso. La función de esta pantalla es asegurar que los padres estén siempre informados sobre cualquier novedad relevante en el proceso terapéutico de su hijo, permitiéndoles actuar rápidamente ante cambios de horario o requerimientos de información por parte del centro.
 
-<img src="imagenes/">
+<img src="imagenes/Applicationwireframes26.png">
 
 **Nueva solicitud de sesión (modal):** El modal presenta un formulario interactivo donde los padres pueden seleccionar el tipo de servicio requerido, el motivo de la consulta y proponer rangos de fecha y hora para una cita adicional o de emergencia. Su función es agilizar el proceso de agendamiento, proporcionando un canal directo y estructurado para que la familia pueda solicitar apoyo extra sin necesidad de llamadas telefónicas, quedando la petición a la espera de la confirmación del especialista.
 
-<img src="imagenes/">
+<img src="imagenes/Applicationwireframes27.png">
 
 **Configuración de perfil:** La interfaz presenta el panel de "Configuración de perfil" del padre o tutor, donde se muestran campos para editar datos personales como nombre, correo electrónico, número de teléfono y la posibilidad de cambiar la foto de perfil. Esta pantalla tiene la función de permitir al usuario gestionar su propia información de contacto y preferencias de cuenta, asegurando que los datos de comunicación con el centro terapéutico estén actualizados y permitiendo también la gestión de la seguridad de la cuenta mediante opciones para modificar la contraseña de acceso.
 
