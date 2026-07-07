@@ -9,8 +9,12 @@ En esta sección se describen los productos de software utilizados por los miemb
 **Project Management**
 Para la gestión del proyecto se utilizó Trello (https://trello.com), herramienta basada en el modelo Kanban que permite organizar tareas, asignar responsables y hacer seguimiento del avance por sprint de forma visual y colaborativa.
 
+<img src="imagenes/ProjectManagement_Trello.jpg">
+
 **Product UX/UI Design**
 Para el diseño de wireframes, mock-ups y prototipos interactivos se utilizó Figma (https://www.figma.com), herramienta colaborativa basada en la web que permite diseñar interfaces y compartir prototipos en tiempo real. Para la elaboración de User Personas, Empathy Maps, Journey Maps e Impact Maps se utilizó UXPressia (https://uxpressia.com). Para los diagramas de Wireflows, User Flows y Event Storming se utilizó LucidChart (https://www.lucidchart.com) y Miro (https://miro.com).
+
+<img src="imagenes/Product_Figma.jpg">
 
 **Software Development**
 Para el desarrollo del Landing Page se utilizó HTML5, CSS3 y JavaScript, editados mediante Visual Studio Code (https://code.visualstudio.com), editor de código ligero y extensible ampliamente adoptado en el equipo.
@@ -34,33 +38,31 @@ El equipo Conecta utiliza GitHub como plataforma de control de versiones y colab
 
 Los repositorios establecidos para cada producto de la solución son los siguientes:
 
-| Producto | Repositorio URL |
-|---|---|
-| Startup / Informe | https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect.git |
-| Landing Page | https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect-website.git |
+| Producto                 | Repositorio URL                                                                                  |
+|--------------------------|--------------------------------------------------------------------------------------------------|
+| Startup / Informe        | https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect.git          |
+| Landing Page             | https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect-website.git  |
 | Frontend Web Application | https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect-frontend.git |
-| RESTful Web Services | https://github.com/1ASI0729-2610-11913/Backend-TherpyConnect.git |
+| RESTful Web Services     | https://github.com/1ASI0729-2610-11913/Backend-TherpyConnect.git                                 |
 
-#### GitFlow Workflow
+Para la gestión del control de versiones, el equipo Conecta aplica **GitFlow** (Driessen, 2010) como Workflow de branching y colaboración en todos los repositorios de código fuente. Las ramas establecidas son las siguientes:
 
-Se implementará el modelo de ramificación propuesto por Vincent Driessen en su artículo *“A successful Git branching model”*, conocido como **GitFlow**. Este modelo organiza el trabajo en las siguientes ramas:
+- `main` — Rama de producción. Contiene únicamente código estable y desplegado.
+- `develop` — Rama de integración continua. Concentra el trabajo completado de cada sprint antes de pasar a producción. Todas las feature/ parten de esta rama y regresan a ella.
+- `feature/BC` — Rama de desarrollo de una funcionalidad específica, asociada a un User Story del Sprint Backlog. Se crea desde develop y se integra de regreso mediante Pull Request, requiriendo al menos una revisión y aprobación de otro integrante del equipo antes del merge.
 
-- `main`: Rama principal, contiene siempre el código en producción.
-- `develop`: Rama de desarrollo principal, donde se integran las funcionalidades antes de pasar a producción.
-- `feature/*`: Ramas creadas a partir de `develop` para desarrollar nuevas funcionalidades.**Convención de nombres:** `feature/<nombre-corto-descriptivo>`_Ejemplo: `feature/login-auth`_
-  **Convención de nombres:** `feature/<descripción-corta>`
-  _Ejemplo: `feature/version-testing`_
+Adicionalmente, todos los mensajes de commit siguen el estándar **Conventional Commits**, aplicando los siguientes prefijos según el tipo de cambio:
 
-#### Convenciones de Commits
+- `feat` — nueva funcionalidad
+- `fix` — corrección de errores
+- `docs` — cambios en documentación
+- `style` — cambios de formato que no afectan la lógica
+- `refactor` — reestructuración de código sin cambiar su comportamiento
+- `chore` — tareas de mantenimiento
 
-Se utilizará el estándar de **Conventional Commits** para los mensajes de commits. Esto facilitará la automatización en los procesos de integración continua y generación de changelogs.
+El siguiente gráfico de red (GitHub → Insights → Network) evidencia la aplicación práctica de GitFlow en el repositorio del Landing Page, mostrando la rama main (línea superior), la rama develop corriendo en paralelo durante el desarrollo, y las ramas feature/ creadas para funcionalidades específicas.
 
-**Ejemplos:**
-
-- `feat: add login functionality`
-- `fix: correct null pointer exception on user service`
-- `chore: update dependencies`
-- `docs: add and update documents`
+<img src="imagenes/Network_Graph.jpg">
 
 ---
 
@@ -164,10 +166,6 @@ Esta sección detalla los pasos necesarios para desplegar de forma satisfactoria
 
 Una vez guardada la configuración, GitHub generará automáticamente una URL pública donde la Business-Web-Page estará disponible. Esta URL sigue el formato: `https://<usuario>.github.io/<repositorio>/`
 
-**Actualizaciones** :
-
-Cualquier nuevo commit hecho a la rama `main` será detectado automáticamente por GitHub Pages y aplicado en la versión publicada sin necesidad de acciones adicionales.
-
 ---
 
 ## 5.2. Landing Page, Services & Applications Implementation
@@ -179,20 +177,20 @@ El primer sprint es un hito importante en nuestro proceso de desarrollo ágil. D
 
 En esta sección se especifican los aspectos principales del Sprint Planning Meeting del Sprint 1. A continuación se presenta el cuadro resumen de la reunión de planificación.
 
-| Sprint # | Sprint 1 |
-|---|---|
-| **Sprint Planning Background** | |
-| Date | 2026-04-21 |
-| Time | 09:00 AM |
-| Location | Reunión virtual mediante Google Meet |
-| Prepared By | Lopez Torres, Leonardo Gabriel |
-| Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Lopez Montalvo, Kevin Edu / Conde Huashuayo, Sebasthian Alex / Vilchez Vite, Gabriel Alejandro / Flores Chávez, Fabricio |
-| Sprint 0 Review Summary | Al ser el primer sprint del proyecto, no existe un sprint anterior que revisar. Se parte desde cero con el levantamiento de requisitos, la definición del producto y la planificación inicial. |
-| Sprint 0 Retrospective Summary | Al ser el primer sprint, no aplica retrospectiva de sprint anterior. El equipo realizó una sesión inicial de alineamiento para establecer acuerdos de trabajo, herramientas de colaboración y metodología a seguir durante el desarrollo del proyecto. |
-| **Sprint Goal & User Stories** | |
-| Sprint 1 Goal | Desarrollar la landing page completa y responsive de la plataforma, establecer los style guidelines del sistema de diseño y habilitar el flujo básico de acceso (registro, inicio de sesión y recuperación de contraseña) para los tres segmentos de usuario: padres de familia, profesores e instituciones terapéuticas. |
-| Sprint 1 Velocity | 40 Story Points (Capacidad establecida para el equipo en este primer sprint, considerando la familiarización con el proyecto y la configuración del entorno de desarrollo.) |
-| Sum of Story Points | 40 Story Points (Distribuidos en: Landing Page: 28 SP \| Style Guidelines: 10 SP \| Acceso básico EP01: 8 SP — con redondeo de 6 SP descontados por ajuste de velocidad inicial) |
+| Sprint #                        | Sprint 1                                                                                                                                                                                                                                                                                                                  |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background**  |                                                                                                                                                                                                                                                                                                                           |
+| Date                            | 2026-04-21                                                                                                                                                                                                                                                                                                                |
+| Time                            | 09:00 AM                                                                                                                                                                                                                                                                                                                  |
+| Location                        | Reunión virtual mediante Google Meet                                                                                                                                                                                                                                                                                      |
+| Prepared By                     | Lopez Torres, Leonardo Gabriel                                                                                                                                                                                                                                                                                            |
+| Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Lopez Montalvo, Kevin Edu / Conde Huashuayo, Sebasthian Alex / Vilchez Vite, Gabriel Alejandro / Flores Chávez, Fabricio                                                                                                                                                                 |
+| Sprint 0 Review Summary         | Al ser el primer sprint del proyecto, no existe un sprint anterior que revisar. Se parte desde cero con el levantamiento de requisitos, la definición del producto y la planificación inicial.                                                                                                                            |
+| Sprint 0 Retrospective Summary  | Al ser el primer sprint, no aplica retrospectiva de sprint anterior. El equipo realizó una sesión inicial de alineamiento para establecer acuerdos de trabajo, herramientas de colaboración y metodología a seguir durante el desarrollo del proyecto.                                                                    |
+| **Sprint Goal & User Stories**  |                                                                                                                                                                                                                                                                                                                           |
+| Sprint 1 Goal                   | Desarrollar la landing page completa y responsive de la plataforma, establecer los style guidelines del sistema de diseño y habilitar el flujo básico de acceso (registro, inicio de sesión y recuperación de contraseña) para los tres segmentos de usuario: padres de familia, profesores e instituciones terapéuticas. |
+| Sprint 1 Velocity               | 40 Story Points (Capacidad establecida para el equipo en este primer sprint, considerando la familiarización con el proyecto y la configuración del entorno de desarrollo.)                                                                                                                                               |
+| Sum of Story Points             | 40 Story Points (Distribuidos en: Landing Page: 28 SP \| Style Guidelines: 10 SP \| Acceso básico EP01: 8 SP — con redondeo de 6 SP descontados por ajuste de velocidad inicial)                                                                                                                                          |
 
 ---
 
@@ -200,122 +198,126 @@ En esta sección se especifican los aspectos principales del Sprint Planning Mee
 
 En esta sección el equipo incluye la elaboración de un artefacto Leadership-and-Collaboration Matrix (LACX), que indique por cada aspecto dentro del alcance del Sprint, quién es el líder y quién o quiénes son colaboradores en dicho aspecto, con el fin de brindar mayor claridad y efectividad en la comunicación al interior del equipo. La sección incluye una introducción donde se explica cuáles son los principales aspectos que se toma en cuenta en el Sprint. Dependiendo del Sprint un aspecto puede ser un subconjunto del alcance funcional de la solución (por ejemplo feature, bounded context, etc.).
 
-Los aspectos considerados en el Sprint 1 son: Landing Page, Style Guidelines, y Flujo de Acceso (Autenticación). Cada aspecto agrupa las User Stories relacionadas trabajadas durante este sprint.
+Los aspectos considerados en el Sprint 1 son: **Landing Page**, **Style Guidelines**, y **Flujo de Acceso (Autenticación)**. Cada aspecto agrupa las User Stories relacionadas trabajadas durante este sprint.
 
 | Team Member (Last Name, First Name) | GitHub Username | Landing Page L / C | Style Guidelines L / C | Flujo de Acceso L / C |
-|---|-----------------|---|---|---|
-| Flores Chávez, Fabricio | Elmiau2341      | L | C | C |
-| Vilchez Vite, Gabriel Alejandro | GZ-99           | C | C | C |
-| Lopez Torres, Leonardo Gabriel | Deiko-138       | C | L | C |
-| Lopez Montalvo, Kevin Edu | Lopescamos      | C | C | L |
-| Conde Huashuayo, Sebasthian Alex | Wolf2911-P      | C | C | C |
+|-------------------------------------|-----------------|--------------------|------------------------|-----------------------|
+| Flores Chávez, Fabricio             | Elmiau2341      | L                  | C                      | C                     |
+| Vilchez Vite, Gabriel Alejandro     | GZ-99           | C                  | C                      | C                     |
+| Lopez Torres, Leonardo Gabriel      | Deiko-138       | C                  | L                      | C                     |
+| Lopez Montalvo, Kevin Edu           | Lopescamos      | C                  | C                      | L                     |
+| Conde Huashuayo, Sebasthian Alex    | Wolf2911-P      | C                  | C                      | C                     |
 
 ---
 
 #### 5.2.1.3. Sprint Backlog 1
 
-El objetivo del Sprint 1 es establecer la base del producto TherapyConnect: desarrollar la landing page completa y responsive, definir los style guidelines del sistema de diseño y habilitar el flujo básico de acceso para los tres segmentos de usuario.
+El Sprint 1 tuvo como único alcance de implementación el desarrollo y despliegue del Landing Page de TherapyConnect, así como la definición del sistema de diseño base. Las User Stories incluidas en este Sprint Backlog corresponden exclusivamente a funcionalidades de la Landing Page, implementadas y verificadas durante el Sprint 1.
 
 Trello: https://trello.com/invite/b/6a01270ea96c0a53e6826d61/ATTI1da43f25bafa713ad39a42e4bf04ea24CA66726B/therapyconnect-sprint-1
 
 <img src="imagenes/Trello_Sprint1.png"> 
 
-
-| User Story Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
-|---|---|---|---|---|---|---|---|
-| US128 | Visualización de la landing page | T001 | Estructura base HTML | Crear el archivo index.html con la estructura semántica de todas las secciones de la landing. | 4h | Flores Chávez, Fabricio | Done |
-| | | T002 | Estilos CSS globales | Implementar main.css con variables de color, tipografía y reset general del proyecto. | 4h | Flores Chávez, Fabricio | Done |
-| | | T003 | Testing de carga y visualización | Verificar que la landing carga sin errores en distintos navegadores. | 2h | Vilchez Vite, Gabriel | Done |
-| US129 | Sección Hero con llamada a la acción | T004 | Maquetación HTML del Hero | Implementar la estructura HTML con título, subtítulo y botón CTA. | 3h | Flores Chávez, Fabricio | Done |
-| | | T005 | Estilos CSS del Hero | Aplicar estilos de fondo, tipografía, colores y alineación del Hero. | 3h | Flores Chávez, Fabricio | Done |
-| | | T006 | Vincular CTA al registro | Configurar el enlace del botón 'Comenzar ahora' hacia el formulario de registro. | 2h | Lopez Torres, Leonardo | Done |
-| US130 | Sección de funcionalidades principales | T007 | Maquetación HTML de funcionalidades | Implementar tarjetas de funcionalidades con íconos y textos descriptivos. | 4h | Vilchez Vite, Gabriel | Done |
-| | | T008 | Estilos CSS de tarjetas | Aplicar estilos con hover y animaciones de entrada a las tarjetas. | 4h | Vilchez Vite, Gabriel | Done |
-| US131 | Sección de segmentos objetivo | T009 | Maquetación HTML de segmentos | Crear las tres tarjetas para padres, instituciones y profesores con íconos representativos. | 4h | Conde Huashuayo, Sebasthian | Done |
-| | | T010 | Interacción hover por segmento | Implementar la funcionalidad que muestra beneficios específicos al seleccionar cada tarjeta. | 4h | Conde Huashuayo, Sebasthian | Done |
-| US132 | Sección de planes y precios | T011 | Maquetación HTML de planes | Implementar tarjetas de planes con nombre, precio, duración y lista de beneficios. | 4h | Flores Chávez, Fabricio | Done |
-| | | T012 | Estilos y destacado del plan recomendado | Aplicar estilos y resaltar el plan recomendado con etiqueta o borde diferenciado. | 4h | Flores Chávez, Fabricio | Done |
-| US133 | Sección de testimonios | T013 | Maquetación HTML de testimonios | Crear tarjetas con avatar, nombre y texto del comentario del usuario. | 3h | Vilchez Vite, Gabriel | Done |
-| | | T014 | Implementar carrusel de testimonios | Desarrollar el carrusel en JavaScript con navegación por flechas y autoavance. | 5h | Vilchez Vite, Gabriel | Done |
-| US134 | Sección de preguntas frecuentes (FAQ) | T015 | Maquetación HTML del FAQ | Implementar la estructura de acordeón con preguntas y respuestas. | 3h | Conde Huashuayo, Sebasthian | Done |
-| | | T016 | Funcionalidad JS del acordeón | Implementar el despliegue y colapso de respuestas al hacer clic en cada pregunta. | 3h | Conde Huashuayo, Sebasthian | Done |
-| US135 | Sección de contacto y footer | T017 | Maquetación HTML del footer | Implementar el footer con columnas de contacto, redes sociales y enlaces a términos. | 3h | Lopez Montalvo, Kevin | Done |
-| | | T018 | Formulario de contacto y validación | Desarrollar el formulario de contacto con validación de campos y mensaje de confirmación. | 5h | Lopez Montalvo, Kevin | Done |
-| US136 | Navegación interna de la landing page | T019 | Implementar menú de navegación | Crear el menú con enlaces a cada sección de la landing page. | 3h | Lopez Torres, Leonardo | Done |
-| | | T020 | Scroll suave y menú fijo | Implementar desplazamiento suave entre secciones y menú fijo al hacer scroll. | 4h | Lopez Torres, Leonardo | Done |
-| | | T021 | Menú hamburguesa para móvil | Implementar el menú hamburguesa responsive con funcionalidad de apertura y cierre. | 3h | Lopez Torres, Leonardo | Done |
-| US137 | Diseño responsive de la landing page | T022 | Media queries para móvil | Agregar media queries CSS para adaptar el layout a pantallas de smartphone. | 6h | Flores Chávez, Fabricio | Done |
-| | | T023 | Media queries para tablet | Agregar media queries CSS para el layout intermedio en dispositivos tablet. | 4h | Flores Chávez, Fabricio | Done |
-| | | T024 | Testing responsive multi-dispositivo | Verificar la correcta visualización en distintos tamaños de pantalla y navegadores. | 2h | Vilchez Vite, Gabriel | Done |
-| US-SG01 | Definición de paleta de colores | T025 | Seleccionar y definir paleta | Seleccionar colores primarios, secundarios y de estado para la plataforma. | 3h | Lopez Torres, Leonardo | Done |
-| | | T026 | Documentar paleta en guía de estilos | Registrar códigos hexadecimales y uso de cada color en el documento de style guidelines. | 2h | Lopez Torres, Leonardo | Done |
-| | | T027 | Aplicar variables CSS de paleta | Implementar las variables CSS (--color-primary, etc.) en el proyecto. | 3h | Lopez Torres, Leonardo | Done |
-| US-SG02 | Definición de tipografía | T028 | Seleccionar fuente y escala tipográfica | Elegir la tipografía principal y definir tamaños H1-H4, cuerpo y etiquetas. | 3h | Lopez Torres, Leonardo | Done |
-| | | T029 | Documentar tipografía en guía de estilos | Registrar fuente, tamaños y pesos tipográficos en el documento de style guidelines. | 2h | Lopez Torres, Leonardo | Done |
-| US-SG03 | Componentes base de UI | T030 | Diseñar botones y variantes | Definir y maquetar estilos de botones (primario, secundario, deshabilitado) con estados hover y active. | 4h | Lopez Torres, Leonardo | Done |
-| | | T031 | Diseñar inputs, cards y alertas | Definir y maquetar estilos de inputs, tarjetas y componentes de alerta con sus variantes. | 4h | Lopez Torres, Leonardo | Done |
-| US-SG04 | Definición de espaciados y grilla | T032 | Definir sistema de grilla | Establecer número de columnas, gutter y márgenes para desktop, tablet y móvil. | 3h | Lopez Torres, Leonardo | Done |
-| | | T033 | Documentar y aplicar espaciados | Registrar valores de espaciado y aplicar variables CSS en el proyecto. | 2h | Lopez Torres, Leonardo | Done |
-| US01 | Registro de usuario | T034 | Maquetación HTML del formulario de registro | Implementar la pantalla de registro con campos de nombre, correo, contraseña y selector de rol. | 4h | Lopez Montalvo, Kevin | Done |
-| | | T035 | Validación de campos del formulario | Implementar validaciones de campos obligatorios, formato de correo y longitud de contraseña. | 4h | Lopez Montalvo, Kevin | Done |
-| | | T036 | Detección de correo duplicado | Implementar verificación para detectar correo ya registrado y mostrar mensaje de error. | 4h | Lopez Montalvo, Kevin | Done |
-| | | T037 | Confirmación y redirección tras registro | Implementar mensaje de éxito y redirección al dashboard según el rol seleccionado. | 4h | Lopez Montalvo, Kevin | Done |
-| US02 | Inicio de sesión | T038 | Maquetación HTML de la pantalla de login | Implementar la vista de inicio de sesión con campos de correo, contraseña y botón de ingreso. | 3h | Lopez Montalvo, Kevin | Done |
-| | | T039 | Autenticación y redirección por rol | Implementar la lógica que valida credenciales y redirige al dashboard según el rol del usuario. | 6h | Lopez Montalvo, Kevin | Done |
-| | | T040 | Mensaje de error en credenciales incorrectas | Mostrar mensaje claro cuando el correo o contraseña ingresados sean incorrectos. | 2h | Lopez Montalvo, Kevin | Done |
-| US03 | Recuperación de contraseña | T041 | Pantalla de solicitud de recuperación | Implementar la vista donde el usuario ingresa su correo para solicitar el restablecimiento. | 3h | Conde Huashuayo, Sebasthian | Done |
-| | | T042 | Envío de enlace de recuperación | Implementar el envío de correo con enlace seguro y temporizado para restablecer la contraseña. | 5h | Conde Huashuayo, Sebasthian | Done |
-| | | T043 | Pantalla de nueva contraseña | Desarrollar el formulario donde el usuario define su nueva contraseña tras seguir el enlace. | 4h | Conde Huashuayo, Sebasthian | Done |
-| US07 | Cierre de sesión seguro | T044 | Implementar botón de cierre de sesión | Agregar la opción de cerrar sesión en el menú, eliminar el token y redirigir al login. | 3h | Lopez Montalvo, Kevin | Done |
-| | | T045 | Cierre automático por inactividad | Implementar el temporizador de inactividad que cierra la sesión y notifica al usuario. | 5h | Lopez Montalvo, Kevin | Done |
+| User Story Id  | User Story Title                       | Task Id  | Task Title                                   | Description                                                                                             | Estimation (Hours)  | Assigned To                 | Status  |
+|----------------|----------------------------------------|----------|----------------------------------------------|---------------------------------------------------------------------------------------------------------|---------------------|-----------------------------|---------|
+| US128          | Visualización de la landing page       | T001     | Estructura base HTML                         | Crear el archivo index.html con la estructura semántica de todas las secciones de la landing.           | 4h                  | Flores Chávez, Fabricio     | Done    |
+|                |                                        | T002     | Estilos CSS globales                         | Implementar main.css con variables de color, tipografía y reset general del proyecto.                   | 4h                  | Flores Chávez, Fabricio     | Done    |
+|                |                                        | T003     | Testing de carga y visualización             | Verificar que la landing carga sin errores en distintos navegadores.                                    | 2h                  | Vilchez Vite, Gabriel       | Done    |
+| US129          | Sección Hero con llamada a la acción   | T004     | Maquetación HTML del Hero                    | Implementar la estructura HTML con título, subtítulo y botón CTA.                                       | 3h                  | Flores Chávez, Fabricio     | Done    |
+|                |                                        | T005     | Estilos CSS del Hero                         | Aplicar estilos de fondo, tipografía, colores y alineación del Hero.                                    | 3h                  | Flores Chávez, Fabricio     | Done    |
+|                |                                        | T006     | Vincular CTA al registro                     | Configurar el enlace del botón 'Comenzar ahora' hacia el formulario de registro.                        | 2h                  | Lopez Torres, Leonardo      | Done    |
+| US130          | Sección de funcionalidades principales | T007     | Maquetación HTML de funcionalidades          | Implementar tarjetas de funcionalidades con íconos y textos descriptivos.                               | 4h                  | Vilchez Vite, Gabriel       | Done    |
+|                |                                        | T008     | Estilos CSS de tarjetas                      | Aplicar estilos con hover y animaciones de entrada a las tarjetas.                                      | 4h                  | Vilchez Vite, Gabriel       | Done    |
+| US131          | Sección de segmentos objetivo          | T009     | Maquetación HTML de segmentos                | Crear las tres tarjetas para padres, instituciones y profesores con íconos representativos.             | 4h                  | Conde Huashuayo, Sebasthian | Done    |
+|                |                                        | T010     | Interacción hover por segmento               | Implementar la funcionalidad que muestra beneficios específicos al seleccionar cada tarjeta.            | 4h                  | Conde Huashuayo, Sebasthian | Done    |
+| US132          | Sección de planes y precios            | T011     | Maquetación HTML de planes                   | Implementar tarjetas de planes con nombre, precio, duración y lista de beneficios.                      | 4h                  | Flores Chávez, Fabricio     | Done    |
+|                |                                        | T012     | Estilos y destacado del plan recomendado     | Aplicar estilos y resaltar el plan recomendado con etiqueta o borde diferenciado.                       | 4h                  | Flores Chávez, Fabricio     | Done    |
+| US133          | Sección de testimonios                 | T013     | Maquetación HTML de testimonios              | Crear tarjetas con avatar, nombre y texto del comentario del usuario.                                   | 3h                  | Vilchez Vite, Gabriel       | Done    |
+|                |                                        | T014     | Implementar carrusel de testimonios          | Desarrollar el carrusel en JavaScript con navegación por flechas y autoavance.                          | 5h                  | Vilchez Vite, Gabriel       | Done    |
+| US134          | Sección de preguntas frecuentes (FAQ)  | T015     | Maquetación HTML del FAQ                     | Implementar la estructura de acordeón con preguntas y respuestas.                                       | 3h                  | Conde Huashuayo, Sebasthian | Done    |
+|                |                                        | T016     | Funcionalidad JS del acordeón                | Implementar el despliegue y colapso de respuestas al hacer clic en cada pregunta.                       | 3h                  | Conde Huashuayo, Sebasthian | Done    |
+| US135          | Sección de contacto y footer           | T017     | Maquetación HTML del footer                  | Implementar el footer con columnas de contacto, redes sociales y enlaces a términos.                    | 3h                  | Lopez Montalvo, Kevin       | Done    |
+|                |                                        | T018     | Formulario de contacto y validación          | Desarrollar el formulario de contacto con validación de campos y mensaje de confirmación.               | 5h                  | Lopez Montalvo, Kevin       | Done    |
+| US136          | Navegación interna de la landing page  | T019     | Implementar menú de navegación               | Crear el menú con enlaces a cada sección de la landing page.                                            | 3h                  | Lopez Torres, Leonardo      | Done    |
+|                |                                        | T020     | Scroll suave y menú fijo                     | Implementar desplazamiento suave entre secciones y menú fijo al hacer scroll.                           | 4h                  | Lopez Torres, Leonardo      | Done    |
+|                |                                        | T021     | Menú hamburguesa para móvil                  | Implementar el menú hamburguesa responsive con funcionalidad de apertura y cierre.                      | 3h                  | Lopez Torres, Leonardo      | Done    |
+| US137          | Diseño responsive de la landing page   | T022     | Media queries para móvil                     | Agregar media queries CSS para adaptar el layout a pantallas de smartphone.                             | 6h                  | Flores Chávez, Fabricio     | Done    |
+|                |                                        | T023     | Media queries para tablet                    | Agregar media queries CSS para el layout intermedio en dispositivos tablet.                             | 4h                  | Flores Chávez, Fabricio     | Done    |
+|                |                                        | T024     | Testing responsive multi-dispositivo         | Verificar la correcta visualización en distintos tamaños de pantalla y navegadores.                     | 2h                  | Vilchez Vite, Gabriel       | Done    |
+| US-SG01        | Definición de paleta de colores        | T025     | Seleccionar y definir paleta                 | Seleccionar colores primarios, secundarios y de estado para la plataforma.                              | 3h                  | Lopez Torres, Leonardo      | Done    |
+|                |                                        | T026     | Documentar paleta en guía de estilos         | Registrar códigos hexadecimales y uso de cada color en el documento de style guidelines.                | 2h                  | Lopez Torres, Leonardo      | Done    |
+|                |                                        | T027     | Aplicar variables CSS de paleta              | Implementar las variables CSS (--color-primary, etc.) en el proyecto.                                   | 3h                  | Lopez Torres, Leonardo      | Done    |
+| US-SG02        | Definición de tipografía               | T028     | Seleccionar fuente y escala tipográfica      | Elegir la tipografía principal y definir tamaños H1-H4, cuerpo y etiquetas.                             | 3h                  | Lopez Torres, Leonardo      | Done    |
+|                |                                        | T029     | Documentar tipografía en guía de estilos     | Registrar fuente, tamaños y pesos tipográficos en el documento de style guidelines.                     | 2h                  | Lopez Torres, Leonardo      | Done    |
+| US-SG03        | Componentes base de UI                 | T030     | Diseñar botones y variantes                  | Definir y maquetar estilos de botones (primario, secundario, deshabilitado) con estados hover y active. | 4h                  | Lopez Torres, Leonardo      | Done    |
+|                |                                        | T031     | Diseñar inputs, cards y alertas              | Definir y maquetar estilos de inputs, tarjetas y componentes de alerta con sus variantes.               | 4h                  | Lopez Torres, Leonardo      | Done    |
+| US-SG04        | Definición de espaciados y grilla      | T032     | Definir sistema de grilla                    | Establecer número de columnas, gutter y márgenes para desktop, tablet y móvil.                          | 3h                  | Lopez Torres, Leonardo      | Done    |
+|                |                                        | T033     | Documentar y aplicar espaciados              | Registrar valores de espaciado y aplicar variables CSS en el proyecto.                                  | 2h                  | Lopez Torres, Leonardo      | Done    |
+| US01           | Registro de usuario                    | T034     | Maquetación HTML del formulario de registro  | Implementar la pantalla de registro con campos de nombre, correo, contraseña y selector de rol.         | 4h                  | Lopez Montalvo, Kevin       | Done    |
+|                |                                        | T035     | Validación de campos del formulario          | Implementar validaciones de campos obligatorios, formato de correo y longitud de contraseña.            | 4h                  | Lopez Montalvo, Kevin       | Done    |
+|                |                                        | T036     | Detección de correo duplicado                | Implementar verificación para detectar correo ya registrado y mostrar mensaje de error.                 | 4h                  | Lopez Montalvo, Kevin       | Done    |
+|                |                                        | T037     | Confirmación y redirección tras registro     | Implementar mensaje de éxito y redirección al dashboard según el rol seleccionado.                      | 4h                  | Lopez Montalvo, Kevin       | Done    |
+| US02           | Inicio de sesión                       | T038     | Maquetación HTML de la pantalla de login     | Implementar la vista de inicio de sesión con campos de correo, contraseña y botón de ingreso.           | 3h                  | Lopez Montalvo, Kevin       | Done    |
+|                |                                        | T039     | Autenticación y redirección por rol          | Implementar la lógica que valida credenciales y redirige al dashboard según el rol del usuario.         | 6h                  | Lopez Montalvo, Kevin       | Done    |
+|                |                                        | T040     | Mensaje de error en credenciales incorrectas | Mostrar mensaje claro cuando el correo o contraseña ingresados sean incorrectos.                        | 2h                  | Lopez Montalvo, Kevin       | Done    |
+| US03           | Recuperación de contraseña             | T041     | Pantalla de solicitud de recuperación        | Implementar la vista donde el usuario ingresa su correo para solicitar el restablecimiento.             | 3h                  | Conde Huashuayo, Sebasthian | Done    |
+|                |                                        | T042     | Envío de enlace de recuperación              | Implementar el envío de correo con enlace seguro y temporizado para restablecer la contraseña.          | 5h                  | Conde Huashuayo, Sebasthian | Done    |
+|                |                                        | T043     | Pantalla de nueva contraseña                 | Desarrollar el formulario donde el usuario define su nueva contraseña tras seguir el enlace.            | 4h                  | Conde Huashuayo, Sebasthian | Done    |
+| US07           | Cierre de sesión seguro                | T044     | Implementar botón de cierre de sesión        | Agregar la opción de cerrar sesión en el menú, eliminar el token y redirigir al login.                  | 3h                  | Lopez Montalvo, Kevin       | Done    |
+|                |                                        | T045     | Cierre automático por inactividad            | Implementar el temporizador de inactividad que cierra la sesión y notifica al usuario.                  | 5h                  | Lopez Montalvo, Kevin       | Done    |
 
 ---
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-Durante el Sprint 1, el alcance de implementación estuvo enfocado exclusivamente en el desarrollo y despliegue de la primera versión del Landing Page de TherapyConnect, así como en la definición del sistema de diseño base (Style Guidelines) y la habilitación del flujo de acceso básico (registro, inicio de sesión, recuperación de contraseña y cierre de sesión) a nivel de interfaz de usuario.
-Landing Page  
+Durante el Sprint 1, el equipo Conecta avanzó en la implementación del Landing Page de TherapyConnect, desarrollado en HTML5, CSS3 y JavaScript vanilla, y desplegado en GitHub Pages. Los principales avances incluyeron la estructura base de todas las secciones de la landing (Hero, Funcionalidades, Segmentos, Planes, Testimonios, FAQ, Contacto y Footer), la implementación del diseño responsive con media queries para móvil y tablet, y la habilitación del scroll suave y menú de navegación. A continuación se presentan los commits representativos del repositorio de Landing Page durante este Sprint.
 
-Durante el Sprint 1 se implementó la Landing Page. Los principales avances fueron:
-
-Diseño responsivo para diferentes tamaños de pantalla.  
-Creación de secciones: Hero, Sobre Nosotros, Beneficios, Testimonios, Preguntas Frecuentes, Tutorial, Contacto y Footer.  
-Aplicación de buenas prácticas de accesibilidad (etiquetado semántico, contraste adecuado).
-Implementación de navegación fluida entre secciones.  
-Validación de compatibilidad en navegadores y dispositivos.
-
-
-En consecuencia, no se ha realizado en este sprint el desarrollo de Web Services ni la implementación de endpoints RESTful, por lo que no existe documentación de servicios mediante OpenAPI/Swagger que reportar en esta entrega. La documentación de servicios será incorporada a partir del Sprint 2, cuando se inicie la implementación del backend con Spring Boot, conforme al plan de desarrollo establecido en el Product Backlog.
+| Repository                                                                           | Branch                     | Commit Id | Commit Message                                    | Commit Message Body                                                     | Committed on (Date) |
+|--------------------------------------------------------------------------------------|----------------------------|-----------|---------------------------------------------------|-------------------------------------------------------------------------|---------------------|
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | main                       | 13677da   | doc:                                              | javascript                                                              | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | main                       | 9ff63a4   | Add main.css with base styles and layout          | Add main.css with base styles and layout                                | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | main                       | 29e223d   | Update print statement from 'Hello' to 'Goodbye'  | Update print statement from 'Hello' to 'Goodbye'                        | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | main                       | 8002da7   | Add mobile menu and language switch functionality | Add mobile menu and language switch functionality                       | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | main                       | ddd2592   | Add initial CSS styles for the project            | Add initial CSS styles for the project                                  | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | hotfix/fix-pages-index     | db339dc   | Merge branch 'hotfix/fix-pages-index'             | Merge branch 'hotfix/fix-pages-index'                                   | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | hotfix/fix-pages-index     | 8af213b   | fix(pages):                                       | relocate index.html to public root.                                     | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | hotfix/github-pages-deploy | e294786   | Merge branch 'hotfix/github-pages-deploy'         | Merge branch 'hotfix/github-pages-deploy'                               | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | hotfix/github-pages-deploy | c66ca2f   | fix:                                              | configure GitHub Pages deployment from public folder                    | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | release/v0.0.1             | d925511   | Merge branch 'release/v0.0.1'                     |                                                                         | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | release/v0.0.1             | fe1ld8e   | fix(release):                                     | normalize contact placeholder information.                              | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | release/v0.0.1             | 7d61e80   | fix(release):                                     | replace empty footer placeholder links with non-navigable placeholders. | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | release/v0.0.1             | 62f432f   | fix(release):                                     | add required validation to contact form fields                          | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | release/v0.0.1             | 4a6a864   | fix(release):                                     | remove obsolete inline onerror attribute from logo image.               | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | main                       | dc69480   | fix(layout):                                      | correct asset paths in static resources                                 | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | main                       | c5b6780   | feat(footer):                                     | implement footer section                                                | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | main                       | 6a2f108   | feat(contact):                                    | implement contact form section                                          | 04/25/2026          |
+| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect  | main                       | cff85a2   | feat(pricing):                                    | implement pricing plans section                                         | 04/25/2026          |
 
 ---
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
+Durante el Sprint 1, el equipo implementó y desplegó la primera versión pública del Landing Page de TherapyConnect, accesible en:
+
+https://1asi0729-2610-11913.github.io/upc-pre-202610-1asi0729-11913-TherapyConnect-website/
+
+La landing page incluye las secciones de Hero con llamada a la acción, presentación de funcionalidades, segmentos objetivo, planes y precios, testimonios de usuarios, preguntas frecuentes, formulario de contacto y footer con redes sociales. El diseño es responsive y se adapta correctamente a dispositivos móviles, tablets y escritorio. A continuación se presentan capturas de las principales secciones implementadas.
+
+<img src="imagenes/landing1.png">
+
+<img src="imagenes/landing2.png">
+
+<img src="imagenes/landing3.png">
+
+Esta captura de pantalla muestra una sección de la página web de **TherapyConnect** titulada *"El problema que resolvemos"*, diseñada con un estilo limpio y corporativo sobre un fondo blanco y detalles morados. En la parte superior se observa un menú de navegación con opciones como *Características*, *Para padres*, *Instituciones* y un botón destacado para *Registrarse gratis*. El contenido central presenta una estructura comparativa de dos columnas: la izquierda, bajo el título *"Sin nuestra plataforma"*, expone en recuadros amarillos con íconos de advertencia los problemas comunes (padres que olvidan instrucciones, gestión ineficiente en Excel o WhatsApp y conflictos de citas); mientras que la derecha, titulada *"Con TherapyConnect"*, ofrece las soluciones en recuadros morados con íconos de verificación (registro digital de sesiones, agenda integrada y chat en tiempo real). Finalmente, en la parte inferior resalta un banner con un degradado de naranja a morado que invita a la acción con la pregunta *¿Listo para transformar tu práctica terapéutica?* y un botón amarillo que dice *Comenzar hoy*.
+
 ---
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-| Repository | Branch                     | Commit Id | Commit Message | Committed on (Date) |
-|---|----------------------------|---|---|---|
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                  | 13677da | doc: javascript | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | 9ff63a4 | Add main.css with base styles and layout | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | 29e223d | Update print statement from 'Hello' to 'Goodbye' | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | 8002da7 | Add mobile menu and language switch functionality | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | ddd2592 | Add initial CSS styles for the project | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer    | db339dc | Merge branch 'hotfix/fix-pages-index' | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer    | 8af213b | fix(pages): relocate index.html to public root. | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer| e294786 | Merge branch 'hotfix/github-pages-deploy' | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer| c66ca2f | fix: configure GitHub Pages deployment from public folder | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer            | d925511 | Merge branch 'release/v0.0.1' | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer           | fe1ld8e | fix(release): normalize contact placeholder information. | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer            | 7d61e80 | fix(release): replace empty footer placeholder links with non-navigable placeholders. | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer           | 62f432f | fix(release): add required validation to contact form fields | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer          | 4a6a864 | fix(release): remove obsolete inline onerror attribute from logo image. | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | dc69480 | fix(layout): correct asset paths in static resources | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | c5b6780 | feat(footer): implement footer section | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | 6a2f108 | feat(contact): implement contact form section | 04/25/2026 |
-| https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect | developer                       | cff85a2 | feat(pricing): implement pricing plans section | 04/25/2026 |
+Durante el Sprint 1, el alcance de implementación estuvo enfocado exclusivamente en el desarrollo y despliegue de la primera versión del Landing Page de TherapyConnect, así como en la definición del sistema de diseño base (Style Guidelines) y la habilitación del flujo de acceso básico (registro, inicio de sesión, recuperación de contraseña y cierre de sesión) a nivel de interfaz de usuario.
 
+En consecuencia, no se ha realizado en este sprint el desarrollo de Web Services ni la implementación de endpoints RESTful, por lo que no existe documentación de servicios mediante OpenAPI/Swagger que reportar en esta entrega. La documentación de servicios será incorporada a partir del Sprint 2, cuando se inicie la implementación del backend con Spring Boot, conforme al plan de desarrollo establecido en el Product Backlog.
 
 ---
 

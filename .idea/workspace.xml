@@ -4,13 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956ede26-2bea-437c-8a25-884cad9a886a" name="Changes" comment="docs: delete To-Be Scenario Mapping from chapter 3." />
+    <list default="true" id="956ede26-2bea-437c-8a25-884cad9a886a" name="Changes" comment="docs: delete To-Be Scenario Mapping from chapter 3.">
+      <change afterPath="$PROJECT_DIR$/imagenes/Network_Graph.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Product_Figma.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/ProjectManagement_Trello.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/landing1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/landing2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/landing3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capitulo-5.md" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo-5.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -21,7 +35,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect&quot;,
     &quot;accountId&quot;: &quot;f293687c-cd80-48c2-9ac6-59cc77a9378f&quot;
   }
 }</component>
@@ -39,7 +53,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/changes&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -49,11 +63,16 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ALEJANDRO\IdeaProjects\upc-pre-202610-1asi0729-11913-TherapyConnect\imagenes" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+        <option value="bundled-jdk-9823dce3aa75-84258761d1cc-intellij.indexing.shared.core-IU-243.28141.41" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.28141.41" />
       </set>
     </attachedChunks>
   </component>
@@ -68,6 +87,9 @@
       <workItem from="1778453953753" duration="1985000" />
       <workItem from="1778602804810" duration="50000" />
       <workItem from="1778602969582" duration="565000" />
+      <workItem from="1783433734809" duration="4878000" />
+      <workItem from="1783450642857" duration="44000" />
+      <workItem from="1783463184794" duration="4882000" />
     </task>
     <task id="LOCAL-00001" summary="docs: delete To-Be Scenario Mapping from chapter 3.">
       <option name="closed" value="true" />
