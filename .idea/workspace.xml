@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956ede26-2bea-437c-8a25-884cad9a886a" name="Changes" comment="docs: delete To-Be Scenario Mapping from chapter 3.">
-      <change afterPath="$PROJECT_DIR$/imagenes/Network_Graph.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/Product_Figma.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/ProjectManagement_Trello.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/landing1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/landing2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/landing3.png" afterDir="false" />
+    <list default="true" id="956ede26-2bea-437c-8a25-884cad9a886a" name="Changes" comment="docs: first update of chapter 5">
+      <change afterPath="$PROJECT_DIR$/imagenes/comits_over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/evidence1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/capitulo-5.md" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo-5.md" afterDir="false" />
     </list>
@@ -89,7 +85,7 @@
       <workItem from="1778602969582" duration="565000" />
       <workItem from="1783433734809" duration="4878000" />
       <workItem from="1783450642857" duration="44000" />
-      <workItem from="1783463184794" duration="4882000" />
+      <workItem from="1783463184794" duration="9073000" />
     </task>
     <task id="LOCAL-00001" summary="docs: delete To-Be Scenario Mapping from chapter 3.">
       <option name="closed" value="true" />
@@ -99,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778455194948</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="docs: first update of chapter 5">
+      <option name="closed" value="true" />
+      <created>1783468357336</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783468357336</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +122,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="docs: delete To-Be Scenario Mapping from chapter 3." />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: delete To-Be Scenario Mapping from chapter 3." />
+    <MESSAGE value="docs: first update of chapter 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: first update of chapter 5" />
   </component>
 </project>
