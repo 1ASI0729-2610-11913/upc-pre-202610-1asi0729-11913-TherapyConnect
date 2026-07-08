@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956ede26-2bea-437c-8a25-884cad9a886a" name="Changes" comment="docs: update Project Report Collaboration Insights (images).">
-      <change afterPath="$PROJECT_DIR$/imagenes/Sprint_Backlog3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/Sprint_Planning_Background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/contributors_sprint3.png" afterDir="false" />
+    <list default="true" id="956ede26-2bea-437c-8a25-884cad9a886a" name="Changes" comment="docs: add Sprint 3 (part 1).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/capitulo-5.md" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo-5.md" afterDir="false" />
     </list>
@@ -86,7 +83,7 @@
       <workItem from="1778602969582" duration="565000" />
       <workItem from="1783433734809" duration="4878000" />
       <workItem from="1783450642857" duration="44000" />
-      <workItem from="1783463184794" duration="21031000" />
+      <workItem from="1783463184794" duration="23078000" />
     </task>
     <task id="LOCAL-00001" summary="docs: delete To-Be Scenario Mapping from chapter 3.">
       <option name="closed" value="true" />
@@ -144,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783482909675</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="docs: add Sprint 3 (part 1).">
+      <option name="closed" value="true" />
+      <created>1783488986200</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1783488986200</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +174,7 @@
     <MESSAGE value="docs: first update of chapter 1" />
     <MESSAGE value="docs: update Project Report Collaboration Insights" />
     <MESSAGE value="docs: update Project Report Collaboration Insights (images)." />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: update Project Report Collaboration Insights (images)." />
+    <MESSAGE value="docs: add Sprint 3 (part 1)." />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: add Sprint 3 (part 1)." />
   </component>
 </project>
