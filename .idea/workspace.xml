@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956ede26-2bea-437c-8a25-884cad9a886a" name="Changes" comment="docs: second update of chapter 5">
-      <change afterPath="$PROJECT_DIR$/imagenes/commits_over_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/contributors2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/evidence2.1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/evidence2.2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/evidence2.3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/evidence2.4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/firebase.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/firebase2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/network2.2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/network2.3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/network2.png" afterDir="false" />
+    <list default="true" id="956ede26-2bea-437c-8a25-884cad9a886a" name="Changes" comment="docs: update Project Report Collaboration Insights (images).">
+      <change afterPath="$PROJECT_DIR$/imagenes/Sprint_Backlog3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Sprint_Planning_Background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/contributors_sprint3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/capitulo-5.md" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo-5.md" afterDir="false" />
     </list>
@@ -94,7 +86,7 @@
       <workItem from="1778602969582" duration="565000" />
       <workItem from="1783433734809" duration="4878000" />
       <workItem from="1783450642857" duration="44000" />
-      <workItem from="1783463184794" duration="11393000" />
+      <workItem from="1783463184794" duration="21031000" />
     </task>
     <task id="LOCAL-00001" summary="docs: delete To-Be Scenario Mapping from chapter 3.">
       <option name="closed" value="true" />
@@ -120,7 +112,39 @@
       <option name="project" value="LOCAL" />
       <updated>1783472837747</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="docs: third update of chapter 5">
+      <option name="closed" value="true" />
+      <created>1783475046907</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783475046907</updated>
+    </task>
+    <task id="LOCAL-00005" summary="docs: first update of chapter 1">
+      <option name="closed" value="true" />
+      <created>1783480751976</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783480751976</updated>
+    </task>
+    <task id="LOCAL-00006" summary="docs: update Project Report Collaboration Insights">
+      <option name="closed" value="true" />
+      <created>1783482893765</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1783482893765</updated>
+    </task>
+    <task id="LOCAL-00007" summary="docs: update Project Report Collaboration Insights (images).">
+      <option name="closed" value="true" />
+      <created>1783482909675</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1783482909675</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +165,10 @@
     <MESSAGE value="docs: delete To-Be Scenario Mapping from chapter 3." />
     <MESSAGE value="docs: first update of chapter 5" />
     <MESSAGE value="docs: second update of chapter 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: second update of chapter 5" />
+    <MESSAGE value="docs: third update of chapter 5" />
+    <MESSAGE value="docs: first update of chapter 1" />
+    <MESSAGE value="docs: update Project Report Collaboration Insights" />
+    <MESSAGE value="docs: update Project Report Collaboration Insights (images)." />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: update Project Report Collaboration Insights (images)." />
   </component>
 </project>
