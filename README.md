@@ -59,15 +59,42 @@ WEBSITE: https://1asi0729-2610-11913.github.io/upc-pre-202610-1asi0729-11913-The
 
 <div align="center">
 
-| Versión  |     Fecha     |  Autor   | Descripción de modificación |
-| :------: |:-------------:|:--------:| :-------------------------: |
-| AV1      | 09/ 04 / 2026 | Leonardo | Primera versión             |
+| Versión |     Fecha      |   Autor   | Descripción de modificación |
+|:-------:|:--------------:|:---------:|:---------------------------:|
+|    1    | 09 / 05 / 2026 | Leonardo  |       Primera versión       |
+|    2    | 15 / 05 / 2026 | Leonardo  |       Segunda versión       |
+|    3    | 18 / 06 / 2026 | Leonardo  |       Tercera versión       |
+|    4    | 07 / 07 / 2026 | Leonardo  |       Cuarta versión        |
 
 </div>
 
 # Project Report Collaboration Insights
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repositorio-181717?logo=github)](https://github.com/1ASI0729-2610-20262-CodeUp/TexCheck)
+El presente informe se elabora de forma colaborativa en el repositorio de control de versiones de la organización pública de GitHub del equipo Conecta, disponible en:
+
+**URL del repositorio:**
+
+https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect.git
+
+Se aplica GitFlow y Conventional Commits para la evolución del documento, manteniendo la rama main como versión estable y develop para la integración de avances de cada entrega. Cada modificación relevante (adición de secciones, correcciones por retroalimentación del docente, mejoras por autocrítica del equipo) se registra mediante un commit individual, lo cual permite trazabilidad directa con el Registro de Versiones del Informe.
+
+**Avance AV1**
+
+Durante esta entrega, los commits se concentraron en los Capítulos I al IV y en el inicio del Capítulo V (Software Configuration Management y Sprint 1). Participaron los cinco integrantes del equipo, distribuyendo la redacción por bounded context y por rol asignado en el Aspect Leaders and Collaborators Matrix.
+
+<img src="imagenes/contributorsAV1.png">
+
+**Avance TB1**
+
+Se incorporaron las correcciones señaladas por el docente sobre los artefactos del Capítulo IV, además del contenido de Sprint 2. Los commits reflejan participación de los cinco integrantes en la actualización del Registro de Versiones y en la expansión de la sección Student Outcome.
+
+<img src="imagenes/contributorsTB1.png">
+
+**Avance AV2**
+
+Se añadió el contenido de Sprint 3, Validation Interviews y el avance de Conclusiones. Los commits muestran la colaboración de todo el equipo en la documentación del despliegue final de los tres productos digitales (Landing Page, Web Application, Web Services).
+
+<img src="imagenes/contributorsAV2.png">
 
 ---
 
