@@ -455,9 +455,29 @@ El Sprint 2 tuvo como objetivo principal desarrollar la primera versión funcion
 #### 5.2.2.4. Development Evidence for Sprint Review.
 En esta sección se presentan los avances realizados durante el Sprint 2, centrado en el desarrollo de los módulos principales del Frontend Web Application de TherapyConnect en Angular. El objetivo principal fue implementar las funcionalidades clave de los cuatro bounded contexts priorizados: IAM (Identity & Access Management), Profile & Preferences, Session Management y Communication, con el fin de ofrecer una experiencia navegable y funcional para los tres segmentos de usuario: padres de familia, profesores e instituciones terapéuticas.
 
+<img src="imagenes/commits_over_2.png">
+
+Durante el Sprint 2, el equipo Conecta implementó la primera versión funcional del Frontend Web Application de TherapyConnect utilizando Angular Framework. Los principales avances incluyeron la implementación de los bounded contexts de IAM (Identity & Access Management), Profile & Preferences, Session Management y Communication, cada uno con sus componentes, servicios e interfaces TypeScript correspondientes. A continuación se detallan los commits más representativos realizados en el repositorio del Frontend durante este Sprint.
+
+<img src="imagenes/contributors2.png">
+
+<img src="imagenes/network2.png">
+
+<img src="imagenes/network2.3.png">
+
 ---
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
+
+Durante el Sprint 2, el equipo implementó y desplegó la primera versión navegable del Frontend Web Application de TherapyConnect en Angular, accesible públicamente vía Firebase Hosting. Las principales vistas implementadas incluyen: registro e inicio de sesión con selección de rol, configuración de perfil, calendario de sesiones, formulario de reserva de citas, horario semanal del terapeuta, panel de mensajes y panel de notificaciones. Cada vista fue desarrollada dentro de su bounded context correspondiente con lazy loading, siguiendo el Design System definido en el Sprint 1 con Angular Material. A continuación se presentan capturas de las principales vistas implementadas.
+
+<img src="imagenes/evidence2.1.png">
+
+<img src="imagenes/evidence2.2.png">
+
+<img src="imagenes/evidence2.3.png">
+
+<img src="imagenes/evidence2.4.png">
 
 ---
 
@@ -475,17 +495,17 @@ Si bien los endpoints REST aún no han sido documentados con OpenAPI dado que el
 - Uso de datos mock en los servicios para simular el comportamiento del API hasta la integración con el backend.
   **Rutas del sistema accesibles (Frontend desplegado):**
 
-| Ruta | Descripción | Segmento |
-|---|---|---|
-| /login | Pantalla de inicio de sesión | Todos |
-| /register | Formulario de registro con selector de rol | Todos |
-| /profile | Configuración de perfil del usuario autenticado | Todos |
-| /calendar | Calendario de sesiones programadas | Padre / Profesor |
-| /appointments/new | Formulario de reserva de cita | Padre |
-| /schedule | Horario semanal del terapeuta | Profesor |
-| /messages | Listado de conversaciones activas | Todos |
-| /messages/:id | Hilo de chat de una conversación específica | Todos |
-| /notifications | Panel de notificaciones del usuario | Todos |
+| Ruta              | Descripción                                     | Segmento         |
+|-------------------|-------------------------------------------------|------------------|
+| /login            | Pantalla de inicio de sesión                    | Todos            |
+| /register         | Formulario de registro con selector de rol      | Todos            |
+| /profile          | Configuración de perfil del usuario autenticado | Todos            |
+| /calendar         | Calendario de sesiones programadas              | Padre / Profesor |
+| /appointments/new | Formulario de reserva de cita                   | Padre            |
+| /schedule         | Horario semanal del terapeuta                   | Profesor         |
+| /messages         | Listado de conversaciones activas               | Todos            |
+| /messages/:id     | Hilo de chat de una conversación específica     | Todos            |
+| /notifications    | Panel de notificaciones del usuario             | Todos            |
 
 **URL del repositorio Frontend:** https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect-frontend.git
 
@@ -496,19 +516,22 @@ Durante el Sprint 2, el equipo Conecta realizó el despliegue de la primera vers
 
 **Plataforma de despliegue:** Firebase Hosting — https://firebase.google.com/products/hosting
 
-**URL del Frontend desplegado:** [Insertar URL pública de Firebase]
+**URL del Frontend desplegado:** https://therapyconnect-frontend.web.app/
 
 **Proceso de despliegue realizado:**
 
 1. Se creó el proyecto en Firebase Console bajo la cuenta del equipo y se habilitó Firebase Hosting para el repositorio del Frontend.
+
+<img src="imagenes/firebase.png">
+
 2. Se instaló Firebase CLI en el entorno de desarrollo y se ejecutó `firebase login` para autenticar la cuenta del equipo.
 3. Se configuró el archivo `firebase.json` indicando el directorio de salida del build de Angular (`dist/therapy-connect`) como carpeta pública del hosting.
 4. Se ejecutó `ng build --configuration production` para generar el build optimizado del proyecto Angular.
-5. Se ejecutó `firebase deploy` para publicar el build en Firebase Hosting.
-6. Firebase Hosting generó automáticamente la URL pública del frontend desplegado con soporte HTTPS.
-   Adicionalmente, se actualizó la Landing Page desplegada en GitHub Pages con mejoras en el diseño y la incorporación de los call-to-action que redirigen al Frontend Web Application desplegado.
 
-![Deployment Evidence Sprint 2](images/sprint2-deployment-evidence.png)
+<img src="imagenes/firebase2.png">
+
+5. Se ejecutó `firebase deploy` para publicar el build en Firebase Hosting.
+6. Firebase Hosting generó automáticamente la URL pública del frontend desplegado con soporte HTTPS. Adicionalmente, se actualizó la Landing Page desplegada en GitHub Pages con mejoras en el diseño y la incorporación de los call-to-action que redirigen al Frontend Web Application desplegado.
 
 ---
 
@@ -524,7 +547,20 @@ La comunicación entre los miembros del equipo fue constante, utilizando WhatsAp
 **Organización GitHub del equipo:**
 https://github.com/1ASI0729-2610-11913
 
-**Repositorio Frontend Web Application:**
-https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect-frontend.git
+A continuación se presentan las evidencias de colaboración en GitHub para los repositorios del Landing Page y del Frontend Web Application durante el Sprint 2.
 
-![GitHub Contributors Sprint 2](images/sprint2-github-contributors.png)
+**Repositorio Landing Page:**
+https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect-website.git
+
+<img src="imagenes/contributors_landing1.png">
+
+<img src="imagenes/contributors_landing2.png">
+
+**Repositorio Frontend Web Application:**
+https://github.com/1ASI0729-2610-11913/upc-pre-202610-1asi0729-11913-TherapyConnect-frontend
+
+<img src="imagenes/contributors_frontend1.png">
+
+<img src="imagenes/contributors_frontend2.png">
+
+Las capturas anteriores evidencian la participación de todos los integrantes del equipo en ambos repositorios durante el Sprint 2, con commits distribuidos según la asignación de aspectos definida en la Leadership and Collaboration Matrix. 
