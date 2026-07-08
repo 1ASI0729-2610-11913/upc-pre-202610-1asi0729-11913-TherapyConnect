@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="956ede26-2bea-437c-8a25-884cad9a886a" name="Changes" comment="docs: add Sprint 3 (part 1).">
+    <list default="true" id="956ede26-2bea-437c-8a25-884cad9a886a" name="Changes" comment="docs: add Sprint 3 (part 2).">
+      <change afterPath="$PROJECT_DIR$/imagenes/Course1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Dashboard1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Dashboard2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Emergency1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Institutional1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Institutional2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/LandingPage_Evidence1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/LandingPage_Evidence2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/LandingPage_Evidence3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/LandingPage_Evidence4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/LandingPage_Evidence5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Marketplace1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Session1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Session2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Session3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Session4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/Sprint3_Demostration.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/documentation_evidence1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/documentation_evidence2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/documentation_evidence3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/documentation_evidence4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/documentation_evidence5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/documentation_evidence6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/documentation_evidence7.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/capitulo-5.md" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo-5.md" afterDir="false" />
     </list>
@@ -83,7 +107,8 @@
       <workItem from="1778602969582" duration="565000" />
       <workItem from="1783433734809" duration="4878000" />
       <workItem from="1783450642857" duration="44000" />
-      <workItem from="1783463184794" duration="23078000" />
+      <workItem from="1783463184794" duration="23467000" />
+      <workItem from="1783522563328" duration="2775000" />
     </task>
     <task id="LOCAL-00001" summary="docs: delete To-Be Scenario Mapping from chapter 3.">
       <option name="closed" value="true" />
@@ -149,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783488986200</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="docs: add Sprint 3 (part 2).">
+      <option name="closed" value="true" />
+      <created>1783491200921</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1783491200921</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +208,7 @@
     <MESSAGE value="docs: update Project Report Collaboration Insights" />
     <MESSAGE value="docs: update Project Report Collaboration Insights (images)." />
     <MESSAGE value="docs: add Sprint 3 (part 1)." />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: add Sprint 3 (part 1)." />
+    <MESSAGE value="docs: add Sprint 3 (part 2)." />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: add Sprint 3 (part 2)." />
   </component>
 </project>

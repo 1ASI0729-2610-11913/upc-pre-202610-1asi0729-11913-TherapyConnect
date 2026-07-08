@@ -697,6 +697,8 @@ https://trello.com/invite/b/6a2e5f3264bc7a86a386bf67/ATTI3996245c5213c7fa16653ab
 | US85                                                         | Despliegue final del backend en la nube     | T239    | Desplegar RESTful API en Railway / Render y configurar base de datos          | Crear el proyecto Spring Boot en Railway (o Render), configurar variables de entorno (DB_URL, JWT_SECRET), ejecutar el build con Maven y verificar que todos los endpoints documentados en Swagger respondan correctamente desde la URL pública.                                          | 4h   | Lopez Torres, Leonardo Gabriel   | Done   |
 | US85                                                         |                                             | T240    | Actualizar Landing Page con video About-The-Product y sección de la app       | Incorporar en el Landing Page la sección de explicación del propósito de TherapyConnect con screenshots del Frontend Angular desplegado, incrustar el video About-The-Product desde YouTube y actualizar los CTA a la URL de producción del Frontend.                                     | 3h   | Lopez Montalvo, Kevin Edu        | Done   |
 
+---
+
 #### 5.2.3.4. Development Evidence for Sprint Review.
 
 Durante el Sprint 3, el equipo Conecta avanzó en la implementación de la primera versión funcional de los Web Services de TherapyConnect, desarrollados bajo el estilo arquitectónico RESTful API utilizando Spring Boot y Java. El objetivo principal fue construir la base del backend de la plataforma, organizar los servicios por bounded contexts y preparar la integración con la Web Application desarrollada previamente en Angular.
@@ -755,3 +757,131 @@ Asimismo, se realizaron mejoras en la Web Application para preparar la conexión
 | https://github.com/1ASI0729-2610-11913/therapy-connect-platform   | develop                  | 19395b5a16d99a9874555f43bb1d15d0bc551c3b   | chore:                                               | initial commit.                                                                                                              | Jun 9, 2026  |
 
 Como resultado, el Sprint 3 permitió pasar de una aplicación web principalmente navegable a una solución con soporte inicial de servicios backend, preparando la plataforma para una integración completa entre frontend, backend y despliegue cloud. 
+
+---
+
+#### 5.2.3.5. Execution Evidence for Sprint Review.
+
+Durante el Sprint 3, se ejecutó la primera versión funcional de TherapyConnect integrando la Web Application con los Web Services implementados en Spring Boot. La ejecución permitió validar los principales flujos de navegación y el comportamiento inicial de los módulos priorizados.
+
+Las funcionalidades verificadas en esta revisión fueron las siguientes:
+
+* Visualización de información institucional desde la Web Application.
+* Registro y consulta de sesiones terapéuticas.
+* Gestión inicial de horarios y citas.
+* Registro de incidentes o alertas durante una sesión.
+* Consulta de actividades educativas adaptadas.
+* Visualización del catálogo de materiales terapéuticos del marketplace.
+* Preparación de servicios HTTP en Angular para consumir la RESTful API.
+* Actualización del Landing Page con acceso al video About-The-Product.
+
+| Vista / Módulo                      | Descripción de ejecución                                                                                                 | Evidencia                                      |
+|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| Landing Page actualizada            | Se visualizó la nueva versión del Landing Page, incluyendo mejoras de diseño y acceso al video About-The-Product.        | <img src="imagenes/LandingPage_Evidence1.png"> |
+|                                     |                                                                                                                          | <img src="imagenes/LandingPage_Evidence2.png"> |
+|                                     |                                                                                                                          | <img src="imagenes/LandingPage_Evidence3.png"> |
+|                                     |                                                                                                                          | <img src="imagenes/LandingPage_Evidence4.png"> |
+|                                     |                                                                                                                          | <img src="imagenes/LandingPage_Evidence5.png"> |
+| Web Application - Dashboard         | Se validó la navegación principal de la aplicación y el acceso a los módulos según el rol del usuario autenticado.       | <img src="imagenes/Dashboard1.png">            |
+|                                     |                                                                                                                          | <img src="imagenes/Dashboard2.png">            |
+| Institutional                       | Se comprobó la visualización y gestión de la información correspondiente a las instituciones terapéuticas.               | <img src="imagenes/Institutional1.png">        |
+|                                     |                                                                                                                          | <img src="imagenes/Institutional2.png">        |
+| Session Coordination and Scheduling | Se verificó el flujo de consulta, programación y gestión de sesiones terapéuticas.                                       | <img src="imagenes/Session1.png">              |
+|                                     |                                                                                                                          | <img src="imagenes/Session2.png">              |
+|                                     |                                                                                                                          | <img src="imagenes/Session3.png">              |
+|                                     |                                                                                                                          | <img src="imagenes/Session4.png">              |
+| Emergency Management                | Se validó la interfaz para el registro y gestión de alertas o incidentes durante las sesiones.                           | <img src="imagenes/Emergency1.png">            |
+| Course and Learning Management      | Se visualizó la sección de cursos, actividades y recursos educativos adaptados para los usuarios.                        | <img src="imagenes/Course1.png">               |
+| Marketplace and Recommendations     | Se comprobó la visualización del catálogo de materiales terapéuticos y las recomendaciones de productos.                 | <img src="imagenes/Marketplace1.png">          |
+| Swagger UI                          | Se verificó la documentación interactiva y la ejecución de pruebas básicas sobre los endpoints expuestos por el backend. |                                                |
+
+**Video demostrativo de ejecución**
+
+URL del video de demostración del Sprint 3:
+
+<img src="imagenes/Sprint3_Demostration.png">
+
+https://upcedupe-my.sharepoint.com/personal/u20241a649_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20241a649%5Fupc%5Fedu%5Fpe%2FDocuments%2FDesktop%202026%2E06%2E19%20%2D%2004%2E56%2E18%2E27%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ef61827c0%2D9be5%2D4a61%2Dba9b%2D4d8f86e47468
+
+En el video se muestra la navegación principal de la plataforma, la ejecución de las vistas implementadas, la documentación de servicios mediante Swagger y el despliegue de los productos digitales correspondientes al Sprint 3.
+
+---
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review.
+
+Durante el Sprint 3, se documentó la primera versión de los Web Services de TherapyConnect utilizando OpenAPI Specification mediante Swagger UI. Esta documentación permite visualizar los endpoints disponibles, sus métodos HTTP, parámetros, cuerpos de solicitud y respuestas esperadas.
+
+La documentación de servicios se organizó de acuerdo con los bounded contexts definidos para el proyecto, permitiendo que cada módulo del backend mantenga una separación clara de responsabilidades y pueda ser consumido por la Web Application de manera ordenada.
+
+**URL de Swagger UI:**
+
+https://therapy-connect-platform.onrender.com/swagger-ui/index.html
+
+**URL del repositorio backend:**
+
+https://github.com/1ASI0729-2610-11913/therapy-connect-platform.git
+
+| Bounded Context                     | Method | Endpoint                                        | Description                                                                 |
+|-------------------------------------|--------|-------------------------------------------------|-----------------------------------------------------------------------------|
+| Institutional                       | GET    | /api/v1/institutions                            | Permite listar las instituciones terapéuticas registradas en la plataforma. |
+| Institutional                       | POST   | /api/v1/institutions                            | Permite registrar una nueva institución terapéutica.                        |
+| Institutional                       | GET    | /api/v1/institutions/{institutionId}            | Permite obtener el detalle de una institución específica.                   |
+| Session Coordination and Scheduling | GET    | /api/v1/sessions                                | Permite listar las sesiones terapéuticas registradas.                       |
+| Session Coordination and Scheduling | POST   | /api/v1/sessions                                | Permite crear una nueva sesión terapéutica.                                 |
+| Session Coordination and Scheduling | PUT    | /api/v1/sessions/{sessionId}                    | Permite actualizar o reprogramar una sesión terapéutica.                    |
+| Session Coordination and Scheduling | DELETE | /api/v1/sessions/{sessionId}                    | Permite cancelar una sesión terapéutica.                                    |
+| Emergency Management                | GET    | /api/v1/emergencies                             | Permite listar alertas o incidentes registrados.                            |
+| Emergency Management                | POST   | /api/v1/emergencies                             | Permite registrar una alerta o incidente durante una sesión.                |
+| Course and Learning Management      | GET    | /api/v1/learning-activities                     | Permite listar actividades educativas adaptadas.                            |
+| Course and Learning Management      | POST   | /api/v1/learning-activities                     | Permite registrar una nueva actividad educativa.                            |
+| Marketplace and Recommendations     | GET    | /api/v1/products                                | Permite listar productos o materiales terapéuticos recomendados.            |
+| Marketplace and Recommendations     | GET    | /api/v1/products/{productId}                    | Permite consultar el detalle de un producto terapéutico.                    |
+| Session and Live                    | GET    | /api/v1/live-sessions                           | Permite consultar sesiones activas o en monitoreo.                          |
+| Session and Live                    | POST   | /api/v1/live-sessions/{sessionId}/observations  | Permite registrar observaciones durante una sesión en vivo.                 |
+
+| Evidencia                | Sección donde va                                                                           |
+|--------------------------|--------------------------------------------------------------------------------------------|
+| Azure VM Running         | 5.2.3.7                                                                                    |
+| IP pública               | 5.2.3.7                                                                                    |
+| Puerto 8080 abierto      | 5.2.3.7                                                                                    |
+| Backend corriendo en SSH | 5.2.3.7                                                                                    |
+| Swagger desde IP pública | 5.2.3.7 y también puede ir en 5.2.3.6                                                      |
+| Endpoint probado         | 5.2.3.6 si es documentación/prueba de API, y 5.2.3.7 si demuestra que funciona desplegado  |
+
+**Evidencia visual de documentación**
+
+<img src="imagenes/documentation_evidence1.png">
+
+Se muestran los endpoints de Session History, Sesiones Notes, Roles y Alerts
+
+<img src="imagenes/documentation_evidence2.png">
+
+Se muestran los endpoints de Sessions, Deliveries y Users
+
+<img src="imagenes/documentation_evidence3.png">
+
+Se muestran los endpoints de Sessions Events, Weekly Schedules
+
+<img src="imagenes/documentation_evidence4.png">
+
+Se muestran los endpoints de Weekly Schedules, live sessions
+
+<img src="imagenes/documentation_evidence5.png">
+
+Se muestran los endpoints de Reminders, Authentication, Session Attendance y Session Observation
+
+<img src="imagenes/documentation_evidence6.png">
+
+Esta captura de pantalla muestra la interfaz de documentación interactiva de una API (estilo Swagger o similar) configurada en modo oscuro, enfocada en la simulación de una petición HTTP de tipo POST para el endpoint /api/v1/session-notes, el cual sirve para crear una nota de sesión. En la sección superior se indica que la solicitud no requiere parámetros en la URL (No parameters), mientras que en el apartado central se muestra el Request body (cuerpo de la petición) en formato application/json. Este cuerpo contiene un objeto JSON con datos de prueba estructurados en cinco atributos: sessionId y authorId con valores numéricos, y title, content junto a noteDate rellenados con texto aleatorio provisional. En la parte inferior, un cursor con forma de mano se posa sobre el botón azul Execute, listo para enviar la petición, justo al lado del botón Clear y por encima de la sección destinada a mostrar las respuestas del servidor.
+
+<img src="imagenes/documentation_evidence7.png">
+
+Se muestra que la respuesta en este caso de 401
+
+Se muestra la interfaz del swagger realizano una ejecucion de un endpoint
+
+La documentación de servicios permite que el equipo frontend identifique claramente cómo consumir la RESTful API y facilita la validación de los recursos implementados durante el Sprint Review.
+
+---
+
+### 5.2.3.7. Software Deployment Evidence for Sprint Review.
