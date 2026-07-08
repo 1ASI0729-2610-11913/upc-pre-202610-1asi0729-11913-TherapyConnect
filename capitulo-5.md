@@ -885,3 +885,105 @@ La documentación de servicios permite que el equipo frontend identifique claram
 ---
 
 ### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 3, el equipo realizó el despliegue de los productos digitales correspondientes al alcance de AV2. Esto incluyó una nueva versión del Landing Page, una nueva versión de la Web Application y la primera versión desplegada de los Web Services de TherapyConnect.
+
+El despliegue permitió validar que los componentes principales de la solución puedan ser accedidos desde un entorno público o cloud, cumpliendo con el objetivo de presentar una solución web distribuida con frontend, backend y documentación de servicios.
+
+**Productos desplegados**
+
+| Producto           | Tecnología              | Plataforma de despliegue   | URL                                                                                         |
+|--------------------|-------------------------|----------------------------|---------------------------------------------------------------------------------------------|
+| Landing Page       | HTML5, CSS3, JavaScript | GitHub Pages               | https://1asi0729-2610-11913.github.io/upc-pre-202610-1asi0729-11913-TherapyConnect-website/ |
+| Web Application    | Angular                 | Firebase Hosting           | https://therapyconnect-frontend.web.app/                                                    |
+| Web Services       | Spring Boot, Java       | Azure (DATA BASE)          | Ip hosting: 38.25.62.175                                                                    |
+| Api Documentation  | OpenApi / Swagger UI    | Mismo entorno del backend  | https://therapy-connect-platform.onrender.com/swagger-ui/index.html                         |
+
+| azureuser@68.155.147.143   |
+|----------------------------|
+| Contraseña: Deikogamer138  |
+
+**Proceso de despliegue realizado**
+
+Para el despliegue de la primera versión de los Web Services de TherapyConnect se utilizó una Virtual Machine en Microsoft Azure. Esta plataforma permitió publicar el backend desarrollado con Spring Boot en un entorno cloud, configurando el acceso mediante una IP pública y reglas de red para habilitar el puerto de ejecución del servicio. De esta manera, se cumplió con el alcance de AV2, que solicita la primera versión desplegada de Web Services. 
+
+1. Se generó la versión productiva del Landing Page y se publicó en GitHub Pages.
+2. Se actualizó la Web Application en Angular con la configuración del entorno de producción.
+3. Se ejecutó el build de Angular mediante el comando correspondiente.
+4. Se publicó la Web Application en la plataforma cloud seleccionada.
+5. Se configuró el backend Spring Boot con sus variables de entorno.
+6. Se conectó el backend con la base de datos o configuración definida para el Sprint.
+7. Se desplegó la RESTful API en la plataforma cloud seleccionada.
+8. Se validó el acceso público a Swagger UI para la documentación de endpoints.
+9. Se verificó la comunicación inicial entre la Web Application y los Web Services.
+
+**Evidencia visual de despliegue:**
+
+<img src="imagenes/render1.png">
+
+Se entra a la pagina de Render en el dashboard para ver los proyectos.Se entra a la pagina de Render en el dashboard para ver los proyectos.
+
+<img src="imagenes/render2.png">
+
+Ingresamos el nombre del proyecto al que vamos a subir a render
+
+<img src="imagenes/render3.png">
+
+Entramos a la fase de produccion, aqui tenemos que solucionar nuestro producto
+
+<img src="imagenes/render4.png">
+
+Entramos a web services.
+
+<img src="imagenes/render5.png">
+
+Entramos a web services
+
+<img src="imagenes/render6.png">
+
+Aquí seleccionamos nuestro frontend en donde tenemos todo nuestros frontend subido, aquí se desplegará todo
+
+<img src="imagenes/render7.png">
+
+Seleccionamos web service
+
+<img src="imagenes/render8.png">
+
+Aqui ponemos los datos de nuestro frontend
+
+<img src="imagenes/render9.png">
+
+Aquí seleccionamos la versión gratis porque no tenemos dinero
+
+Con este despliegue, TherapyConnect cuenta con una primera versión distribuida de sus componentes principales, permitiendo demostrar el avance técnico del producto durante el Sprint Review.
+
+---
+
+### 5.2.3.8. Team Collaboration Insights during Sprint.
+
+Durante el Sprint 3, el equipo Conecta fortaleció su colaboración técnica y organizacional, debido a que este sprint implicó un mayor nivel de complejidad al incorporar el desarrollo de Web Services con Spring Boot, la documentación de endpoints con Swagger, la integración con la Web Application y la actualización de los productos desplegados.
+
+<img src="imagenes/Team_Collaboration3.1.png">
+
+Esta captura de pantalla muestra la sección Network graph (Gráfico de red) dentro de la pestaña Insights de un repositorio de GitHub llamado therapy-connect-platform. En un entorno de tema oscuro, la imagen presenta una representación visual del historial de desarrollo del proyecto a través de líneas de tiempo de colores (blanco, azul y verde) que detallan las bifurcaciones y fusiones de los distintos commits. En la parte izquierda se aprecia el menú de navegación de estadísticas, mientras que en el gráfico principal se distinguen de forma vertical las etiquetas con los nombres de varias ramas de trabajo, tales como master, develop, feature/marketplace-and-recommendations, feature/update-database, bugfix/fix-data y probar.
+
+<img src="imagenes/Team_Collaboration3.2.png">
+
+Esta captura de pantalla muestra la sección Contributors (Colaboradores) dentro de la pestaña Insights del mismo repositorio de GitHub, therapy-connect-platform, configurada también en modo oscuro. En la parte superior central se presenta un gráfico principal titulado Commits over time, que muestra la actividad de contribuciones semanales a la rama master entre el 14 de marzo y el 20 de junio de 2026, destacando un notable pico de actividad en la semana del 15 de junio. Debajo de este panel general, se detallan en tarjetas individuales los gráficos de actividad específicos de los cuatro principales desarrolladores del proyecto ordenados por su volumen de aportes: Lopescamos (en el puesto número 1 con 35 commits), seguido por GZ-99 (puesto 2 con 13 commits), Deiko-138 (puesto 3 con 13 commits pero diferente volumen de líneas modificadas) y Wolf2911-P (puesto 4 con 8 commits), mostrando cada uno la cantidad exacta de commits realizados junto con las líneas de código agregadas y eliminadas.
+
+<img src="imagenes/Team_Collaboration3.3.png">
+
+La coordinación del equipo se realizó mediante reuniones virtuales, comunicación constante por WhatsApp y seguimiento de tareas en Trello. Cada integrante asumió responsabilidades relacionadas con los bounded contexts definidos en el Sprint Planning, respetando la matriz de líderes y colaboradores establecida para el Sprint 3.
+
+<img src="imagenes/Team_Collaboration3.4.png">
+
+**Principales prácticas colaborativas aplicadas**
+
+* Organización de tareas por bounded context dentro del Sprint Backlog 3.
+* Uso de ramas feature para implementar funcionalidades específicas del backend y frontend.
+* Aplicación de conventional commits para mantener un historial claro de cambios.
+* Revisión de avances mediante Pull Requests antes de integrar cambios a la rama principal de desarrollo.
+* Coordinación por Google Meet para resolver dudas técnicas sobre Spring Boot, Angular y despliegue.
+* Comunicación constante por WhatsApp para reportar avances, bloqueos y acuerdos del equipo.
+* Validación conjunta de Swagger UI y endpoints implementados.
+* Revisión grupal del despliegue de Landing Page, Web Application y Web Services.
